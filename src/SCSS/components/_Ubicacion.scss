@@ -1,0 +1,87 @@
+.ubicacion {
+    min-height: calc(100vh - 200px); /* Calcula la altura mínima de la ubicación para que el footer quede al final de la página para solucionar el problema de que el footer quedaba en el medio */
+    width: 100%;
+    background-color: $Fondo;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos internos se apilen verticalmente */
+}
+
+.carruselUbicacion {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+
+    .carousel {
+        padding-top: 120px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.presentacionUbicacion {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    font-family: 'Urbanist', sans-serif;
+    
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr; /* Dos columnas iguales en pantallas medianas y grandes */
+        grid-template-areas:
+            "tituloUbicacion fraseUbicacion"
+            "textoUbicacion textoUbicacion";
+        padding: 10px 40px;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    @media (min-width: 1025px) {
+        padding: 50px 60px;
+        font-size: 20px;
+    }
+}
+
+.fraseUbicacion {
+    grid-area: fraseUbicacion;
+    font-size: 2rem;
+    color: $Componentes;
+    font-weight: 500;
+}
+
+.textoUbicacion {
+    grid-area: textoUbicacion;
+    color: $TextoNegro;
+}
+
+.serviciosCercanos{
+    height: auto;
+    background-color: $Fondo;
+
+    h2{
+        color: $Componentes;
+        font-family: 'Urbanist';
+        font-weight: 500;
+        font-size: 2rem;
+        padding-top: 20px;
+        //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+.mapaUbicacion{
+    height: auto;
+    padding: 20px;
+    color: $Componentes;
+    background-color: $Fondo;
+    //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    img{
+        padding: 20px;
+        width: 90%;
+    }
+} 
+.tituloMapa{
+    user-select: none;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}

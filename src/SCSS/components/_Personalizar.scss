@@ -1,0 +1,42 @@
+.personalizar {
+    margin-top: 100px;
+    text-align: center;
+
+    .fila {
+        display: flex; // Organiza las imágenes en fila
+        justify-content: center; // Centra las imágenes
+        gap: 10px; // Espaciado entre imágenes
+        margin-bottom: 20px; // Espaciado entre filas
+
+        img {
+            width: 400px; // Ajusta el tamaño según necesites
+            height: auto;
+            cursor: pointer;
+            border-radius: 5px; // Bordes redondeados opcionales
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                
+            }
+        }
+    }
+
+    .seleccionada {
+        border: 3px solid #ff0000; // Resalta la imagen seleccionada
+    }
+    .botonGuardar {
+        background-color: $Componentes;
+        color: white; /* Asegura que el texto sea visible sobre el fondo */
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 10px 10px !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease !important; /* Incluye border-bottom-color en la transición */
+        
+    }
+    
+    .botonGuardar:hover {
+        background-color: #d1004d;
+        color: white !important; /* Cambia el color del texto al hacer hover */
+    }
+}

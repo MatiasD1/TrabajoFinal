@@ -1,0 +1,137 @@
+.EnlaceContacto {
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+
+.contenedorEnlaceContacto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TituloEnlaceContacto {
+    font-family: 'Urbanist';
+    font-style: 400;
+    position: absolute;
+    top: 20%;
+    color: $Encabezado;
+    font-size: 46px;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.FraseEnlaceContacto {
+    font-family: 'Urbanist', sans-serif;
+    font-style: 300;
+    position: absolute;
+    color: $TextoBlanco;
+    top: 36%;
+    font-size: 25px;
+    z-index: 1;
+    padding: 0px 20px;
+}
+
+.fotoEnlaceContacto {
+    opacity: 50%;
+    display: block;
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: 500px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+}
+
+.textoEnlaceContacto {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $Encabezado; /* Cambia el color del texto si es necesario */
+    font-size: 4.3rem; /* Ajusta el tamaño del texto según sea necesario */
+    font-family: 'Urbanist', sans-serif;
+    font-style: 500;
+    background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 0px 25px 18px 25px; /* Espaciado interno para el texto */
+    border: 2px solid $Encabezado;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.textoEnlaceContacto:hover {
+    color: rgb(211, 211, 211);
+    border: 2px solid $Componentes;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+/* Media Queries para diseño responsive */
+
+/* Teléfono Móvil */
+@media (max-width: 767px) {
+    .TituloEnlaceContacto {
+        font-size: 24px;
+        top: 15%;
+    }
+
+    .FraseEnlaceContacto {
+        font-size: 16px;
+        top: 30%;
+    }
+
+    .fotoEnlaceContacto {
+        height: 300px;
+    }
+
+    .textoEnlaceContacto {
+        font-size: 2.5rem;
+        padding: 10px 15px;
+        top: 72%;
+    }
+}
+
+/* Tableta/Escritorio Pequeño */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .TituloEnlaceContacto {
+        font-size: 32px;
+        top: 18%;
+    }
+
+    .FraseEnlaceContacto {
+        font-size: 20px;
+        top: 32%;
+    }
+
+    .fotoEnlaceContacto {
+        height: 400px;
+    }
+
+    .textoEnlaceContacto {
+        font-size: 3.0rem;
+        padding: 15px 20px;
+        top: 65%;
+    }
+}
+
+/* Escritorio/Laptop Grande */
+@media (min-width: 1200px) {
+    .TituloEnlaceContacto {
+        font-size: 46px;
+        top: 20%;
+    }
+
+    .FraseEnlaceContacto {
+        font-size: 25px;
+        top: 36%;
+    }
+
+    .fotoEnlaceContacto {
+        height: 500px;
+    }
+
+    .textoEnlaceContacto {
+        font-size: 4.3rem;
+        padding: 18px 25px;
+        top: 72%;
+    }
+}

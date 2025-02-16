@@ -1,0 +1,300 @@
+/* Estilos para el botón de hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: $Encabezado;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1200;
+}
+
+/* Estilos para el enlace de contacto */
+.contacto-link {
+    background-color: $Componentes;
+    color: white; /* Asegura que el texto sea visible sobre el fondo */
+    border-radius: 5px;
+    margin-top: 1.5rem !important;
+    padding: 10px 10px !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid transparent; /* Borde inferior inicial transparente */
+    transition: background-color 0.3s ease !important; /* Incluye border-bottom-color en la transición */
+}
+
+.contacto-link:hover {
+    background-color: #d1004d;
+    color: white !important; /* Cambia el color del texto al hacer hover */
+}
+
+
+
+/* Media queries para la responsividad */
+
+/* Móviles (hasta 849px) */
+@media (max-width: 849px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0) !important;
+        position: absolute;
+        top: 140px; /* Ajustado para que los links aparezcan más abajo del título */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav.show {
+        display: flex;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .nav-item {
+        text-align: center;
+        margin: 0;
+    }
+
+    .NavBar {
+        flex-direction: column;
+        align-items: flex-start; /* Alinea los elementos en la parte superior izquierda */
+        padding: 42px 0;
+        width: 100%;
+        background-color: black;
+    }
+
+    .NavBar h2, .NavBar h3 {
+        position: static;
+        text-align: left;
+        margin: 10px;
+        word-wrap: break-word; /* Permite que el texto se ajuste a pantallas pequeñas */
+    }
+
+    .NavBar h2 {
+        font-size: 18px; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+
+    .NavBar h3 {
+        font-size: 14px; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+
+    .nav-link {
+        padding: 10px 0;
+        color: $Encabezado !important;
+        font-size: 18px;
+        text-shadow: none;
+        border-bottom: none;
+    }
+
+    .nav-link:hover {
+        transition: color 0.3s ease;
+    }
+}
+
+/* Tabletas (850px a 1200px) */
+@media (min-width: 850px) and (max-width: 1200px) {
+    .hamburger {
+        display: none; /* Ocultar el botón de hamburguesa en tabletas */
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0) !important;
+    }
+
+    .nav-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .NavBar {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .NavBar h2, .NavBar h3 {
+        position: static;
+        text-align: center;
+        margin: 0;
+        font-size: 20px; /* Tamaño ajustado para tabletas */
+    }
+
+    .NavBar h2 {
+        font-size: 22px;
+    }
+
+    .NavBar h3 {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        padding: 15px;
+        font-size: 18px; /* Ajuste para tamaño de fuente en tabletas */
+    }
+
+    .nav-link:hover {
+        color: $color7;
+        transition: color 0.3s ease;
+    }
+}
+
+/* Escritorio (1201px y superior) */
+@media (min-width: 1201px) {
+    .hamburger {
+        display: none; /* Ocultar el botón de hamburguesa en escritorios */
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.5), transparent);
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .nav-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .NavBar {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .NavBar h2, .NavBar h3 {
+        position: static;
+        text-align: center;
+        margin: 0;
+        font-size: 24px; /* Tamaño ajustado para pantallas grandes */
+    }
+
+    .NavBar h2 {
+        font-size: 24px;
+    }
+
+    .NavBar h3 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        padding: 17px 20px;
+        font-size: 20px; /* Tamaño de fuente ajustado para escritorios */
+    }
+
+    .nav-link:hover {
+        color: $Componentes;
+        transition: color 0.5s ease;
+    }
+}
+
+/* Estilos para el enlace de navegación */
+.nav-link {
+    color: $Encabezado;
+    margin-top: 1rem;
+    border-bottom: 2px solid transparent;
+    padding: 17px 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Urbanist', sans-serif;
+
+    &:hover {
+        color: $color7;
+        //border-bottom-color: rgb(255, 255, 255);
+        //transition: color 0.5s ease, border-bottom-color 0.5s ease;
+        transition: color 0.5s ease;
+        text-shadow: 2px 2px 4px rgba(245, 240, 240, 0.26);
+    }
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-right: 30px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.NavBar {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la esquina superior izquierda */
+    width: 100%; /* Asegura que ocupe el 100% del ancho */
+    position: relative; /* Para que los elementos se posicionen relativamente dentro del navbar */
+
+    h2 {
+        font-size: 24px; /* Tamaño ajustado para pantallas grandes */
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+        color: $Encabezado;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 1600;
+    }
+
+    h3 {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        font-size: 16px; /* Tamaño ajustado para pantallas grandes */
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+        color: $Componentes;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 1600;
+    }
+
+    .fixed {
+
+        .nav {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+
+    .nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.5), transparent) !important;
+    }
+}
+
+.nav.show + .NavBar h2,
+.nav.show + .NavBar h3 {
+    display: none;
+}
+
+/* Asegúrate de que el body y el html ocupen el 100% del ancho */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

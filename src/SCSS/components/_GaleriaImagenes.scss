@@ -1,0 +1,139 @@
+.galeria-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1500;
+}
+
+/* Establece las propiedades para los contenedores de las diapositivas */
+.galeria-slides {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+/* Establece las propiedades para las imágenes dentro de las diapositivas */
+.galeria-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: cover;
+}
+
+/* Establece las propiedades para el botón de diapositiva anterior y siguiente */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff1d8;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Establece las propiedades para los puntos de navegación entre las diapositivas */
+.galeria-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.galeria-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1200;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: $Componentes;
+}
+
+/* Estilos responsivos */
+
+/* Móviles (hasta 767px) */
+@media (max-width: 767px) {
+    .galeria-content {
+        margin-top: 20px;
+        max-width: 95%; /* Aumentado a 95% para llenar más la pantalla en móviles */
+        max-height: 95%; /* Aumentado a 95% para ocupar más espacio vertical */
+    }
+
+    .galeria-slide img {
+        max-height: calc(70vh - 120px); /* Ajusta la altura de la imagen con el padding */
+        width: auto; /* Ajusta la imagen para que se adapte al contenedor */
+        height: 100%;
+        object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 24px; /* Ajuste del tamaño de los botones para mejor visibilidad */
+        padding: 15px;
+    }
+}
+
+/* Tabletas (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .galeria-content {
+        max-width: 90%; /* Aumentado a 90% para tabletas */
+        max-height: 90%; /* Aumentado a 90% para tabletas */
+        margin-top: 30px;
+    }
+
+    .galeria-slide img {
+        max-height: calc(75vh - 20px); /* Ajusta la altura de la imagen con el padding */
+        width: auto; /* Ajusta la imagen para que se adapte al contenedor */
+        height: 100%;
+        object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 24px; /* Ajuste del tamaño de los botones para mejor visibilidad */
+        padding: 18px;
+    }
+}
+
+/* Escritorio (1025px y superior) */
+@media (min-width: 1025px) {
+    .galeria-content {
+        max-width: 90%; /* Ancho máximo del 90% para escritorio */
+        max-height: 90%; /* Altura máxima del 90% para escritorio */
+    }
+
+    .galeria-slide img {
+        max-height: 90vh; /* Ajusta la altura máxima de la imagen para escritorio */
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 24px; /* Tamaño de los botones para pantallas grandes */
+        padding: 20px;
+    }
+}

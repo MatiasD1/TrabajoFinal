@@ -1,0 +1,222 @@
+.departamentos {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    background-color: $Fondo; /* Asegúrate de reemplazar con el color correcto */
+}
+
+.presentacionDepartamentos{
+    padding: 40px;
+    
+    h2{
+        padding-bottom: 20px;
+        color: $Componentes;
+        font-family: "Urbanist", sans-serif;
+    }
+    p{
+        color: $TextoNegro;
+        font-size: 18px;
+        padding: 0px 20px;
+        font-family: "Urbanist", sans-serif;
+    }
+}
+
+.containerDepartamentos {
+    padding: 20px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    margin-bottom: 0; /* Elimina márgenes entre filas */
+    min-height: 350px; /* Mantiene una altura mínima de fila */
+}
+
+.fotosDeptos, .textoDepartamentos {
+    flex: 1;
+}
+
+.fotosDeptos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0; /* Elimina el padding para que las imágenes se toquen */
+    height: 100%; /* Ajusta la altura para que sea proporcional */
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+
+.fotoSimbolo {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    z-index: 1;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.fotoDepto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    background-color: black !important;
+}
+
+.fotoDepto:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.fotosDeptos:hover .fotoSimbolo {
+    display: block;
+    cursor: pointer;
+}
+
+.textoDepartamentos {
+    font-family:'Urbanist', sans-serif;
+    color: $TextoNegro;
+    padding-top: 20px; /* Elimina padding para que se ajuste al contenedor */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido y el icono estén distribuidos */
+    position: relative;
+    min-height: 200px; /* Ajusta la altura mínima para asegurar que el icono esté en la parte inferior */
+
+    h2 {
+        color: $Componentes;
+    }
+
+    .aloeFooter {
+        width: 30px;
+        height: auto;
+        display: block;
+        margin: auto; /* Centra el icono y añade espacio alrededor */
+        margin-bottom: 10px;
+    }
+}
+
+/* Móviles (hasta 767px) */
+@media (max-width: 767px) {
+
+    .presentacionDepartamentos{
+        h2{
+            font-size: 24px;
+        }
+    }
+    .item {
+        flex-direction: column;
+        min-height: auto; /* Altura automática para móviles */
+    }
+
+    .fotosDeptos {
+        width: 100%;
+        height: 200px; /* Ajusta la altura para móviles */
+    }
+
+    .tituloDepto {
+        font-size: 20px; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+
+    .subtituloDepto {
+        font-size: 16px; /* Tamaño ajustado para pantallas pequeñas */
+        padding: 0px 20px;
+    }
+
+    .textoDepto {
+        font-size: 12px; /* Tamaño ajustado para pantallas pequeñas */
+        padding: 0px 20px;
+    }
+
+    .aloeFooter {
+        width: 20px; /* Tamaño más pequeño para móviles */
+        margin:  0px 20px; /* Añade espacio superior e inferior para móviles */
+    }
+}
+
+/* Tabletas (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .presentacionDepartamentos{
+        h2{
+            font-size: 34px;
+        }
+    }
+    .fotosDeptos {
+        height: 100%; /* Asegúrate de que la altura sea 100% de la fila */
+    }
+
+    .tituloDepto {
+        font-size: 22px; /* Tamaño ajustado para pantallas medianas */
+    }
+
+    .subtituloDepto {
+        font-size: 18px; /* Tamaño ajustado para pantallas medianas */
+        padding: 0px 20px;
+    }
+
+    .textoDepto {
+        font-size: 14px; /* Tamaño ajustado para pantallas medianas */
+        padding: 0px 20px;
+    }
+
+    .aloeFooter {
+        width: 25px; /* Tamaño ajustado para tabletas */
+        margin: 20px auto 20px; /* Añade margen superior e inferior para tabletas */
+    }
+    .dep2, .dep4 {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Escritorio (1025px y superior) */
+@media (min-width: 1025px) {
+
+    .presentacionDepartamentos{
+        h2{
+            font-size: 36px;
+        }
+    }
+    .containerDepartamentos {
+        padding: 20px;
+    }
+    .item {
+        flex-direction: row;
+        min-height: 350px; /* Mantiene una altura mínima para pantallas grandes */
+    }
+
+    .fotosDeptos {
+        height: 100%; /* Ajusta la altura para pantallas grandes */
+    }
+
+    .tituloDepto {
+        font-size: 28px; /* Tamaño ajustado para pantallas grandes */
+    }
+
+    .subtituloDepto {
+        font-size: 18px; /* Tamaño ajustado para pantallas grandes */
+        font-weight: 500;
+        padding: 0px 40px;
+    }
+
+    .textoDepto {
+        font-size: 18px; /* Tamaño ajustado para pantallas grandes */
+        padding: 0px 40px;
+    }
+
+    .aloeFooter {
+        width: 30px; /* Tamaño ajustado para pantallas grandes */
+        margin: 30px auto 30px; /* Añade un margen inferior para pantallas grandes */
+    }
+    .dep2, .dep4 {
+        flex-direction: row-reverse;
+    }
+}

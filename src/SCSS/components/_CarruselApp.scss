@@ -1,0 +1,103 @@
+.carrusel {
+    background-color: black;
+    display: flex;
+}
+
+.flecha {
+    width: 40px;
+    margin: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#carouselExampleAutoplaying {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido en la parte inferior */
+    width: 100%;
+    max-height: 100vh; /* Ajusta la altura al 100% de la vista */
+}
+
+.carrusel .carousel-item {
+    position: relative; /* Necesario para posicionar el texto absolutamente dentro del item */
+
+    img{
+        opacity: 60%;
+    }
+}
+
+.textoCarruselInicio {
+    position: absolute; 
+    top: 70%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 36px; 
+    z-index: 99999 !important; 
+    text-align: center; 
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    font-family: "Urbanist", sans-serif;
+}
+
+/* Definir la animación fadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+
+/* Media Queries para diseño responsive */
+
+/* Teléfono Móvil */
+@media (max-width: 767px) {
+    .flecha {
+        width: 30px;
+        margin: 10px;
+    }
+
+    .textoCarruselInicio {
+        top: 60%; /* Ajusta según sea necesario */
+        font-size: 18px;
+    }
+}
+
+/* Tableta/Escritorio Pequeño */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .flecha {
+        width: 35px;
+        margin: 15px;
+    }
+
+    .textoCarruselInicio {
+        top: 65%; /* Ajusta según sea necesario */
+        font-size: 40px;
+    }
+}
+
+/* Escritorio/Laptop Grande */
+@media (min-width: 1200px) {
+    .flecha {
+        width: 40px;
+        margin: 20px;
+    }
+
+    .textoCarruselInicio {
+        top: 70%; /* Ajusta según sea necesario */
+        font-size: 36px;
+    }
+}
+

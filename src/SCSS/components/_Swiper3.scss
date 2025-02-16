@@ -1,0 +1,107 @@
+// CARRUSELES QUINCHO Y ESTACIONAMIENTO #SERVICIOS
+.swiper-container {
+  width: 60%; // Asegúrate de que el contenedor ocupe el 100% del ancho
+  margin: auto;
+  position: relative; // Para posicionar las flechas de navegación
+  border: solid 2px white;
+  padding: 10px;
+
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; // Asegúrate de que cada diapositiva ocupe el 100% del ancho del contenedor
+  }
+
+  .slide-image {
+    width: 100%; // Asegúrate de que la imagen ocupe el 100% del ancho de la diapositiva
+    height: auto; // Mantén la proporción de la imagen
+    object-fit: cover; // Cubrir el contenedor sin deformarse
+  }
+
+  .swiper-button-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3vw; // Tamaño dinámico basado en el ancho de la pantalla
+    height: 3vw; // Tamaño dinámico basado en el ancho de la pantalla
+    z-index: 10;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.swiper-button-prev-custom {
+      left: 10px;
+    }
+
+    &.swiper-button-next-custom {
+      right: 10px;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 10px; // Posición de la paginación en la parte inferior
+    .swiper-pagination-bullet {
+      background-color: $Componentes; // Color de fondo base
+      opacity: 0.5; // Opacidad base
+      transition: opacity 0.15s ease; // Transición de opacidad
+
+      &:hover {
+        opacity: 1; // Opacidad al pasar el mouse
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1; // Opacidad cuando está activo
+    }
+  }
+}
+// Media query para pantallas pequeñas
+@media (max-width: 767px) {
+  .swiper-container {
+    width: 90%; // Ajusta el ancho para pantallas pequeñas
+    padding: 5px; // Reduce el padding para ahorrar espacio
+  }
+
+  .swiper-button-custom {
+    width: 8vw; // Tamaño más pequeño para botones en pantallas pequeñas
+    height: 8vw; // Tamaño más pequeño para botones en pantallas pequeñas
+    justify-content: space-between;
+  }
+
+}
+
+// Media query para pantallas medianas
+@media (min-width: 768px) and (max-width: 1024px) {
+  .swiper-container {
+    width: 80%; // Ajusta el ancho para pantallas medianas
+    padding: 8px; // Ajusta el padding para pantallas medianas
+  }
+
+  .swiper-button-custom {
+    width: 5vw; // Tamaño intermedio para botones en pantallas medianas
+    height: 5vw; // Tamaño intermedio para botones en pantallas medianas
+    justify-content: space-between;
+  }
+
+
+}
+
+// Media query para pantallas grandes
+@media (min-width: 1025px) {
+  .swiper-container {
+    width: 60%; // Ancho más amplio para pantallas grandes
+    padding: 10px; // Padding para pantallas grandes
+  }
+
+  .swiper-button-custom {
+    width: 3vw; // Tamaño para botones en pantallas grandes
+    height: 3vw; // Tamaño para botones en pantallas grandes
+    justify-content: space-between;
+  }
+
+  }

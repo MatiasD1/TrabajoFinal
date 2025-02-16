@@ -1,0 +1,11 @@
+.carrusel2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    .carousel-item1 img {
+        height: 450px;
+        object-fit: cover;
+    }
+}  
