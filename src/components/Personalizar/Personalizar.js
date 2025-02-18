@@ -76,7 +76,7 @@ const Personalizar = () => {
 
     return (
         <div className="personalizar">
-            <h2>Selecciona tus imágenes</h2>
+            <h2>Personaliza tu habitación</h2>
             {opciones.map((fila, filaIndex) => (
                 <div key={filaIndex} className="fila">
                     {fila.map((imagen, imgIndex) => (

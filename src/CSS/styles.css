@@ -19,7 +19,7 @@ $color6: #464646; //texto oscuro
 
 .App {
   text-align: center;
-  background-color: #ffffc1;
+  background-color: #CBBD93;
   overflow: hidden;
 }
 
@@ -357,7 +357,7 @@ button[type=submit]:hover {
   height: auto;
   position: relative;
   z-index: 1;
-  background-color: #ffffc1; /* Asegúrate de reemplazar con el color correcto */
+  background-color: #CBBD93; /* Asegúrate de reemplazar con el color correcto */
 }
 
 .presentacionUnidades {
@@ -471,7 +471,6 @@ button[type=submit]:hover {
   .tituloUnid {
     font-size: 20px;
   }
-  .subtituloUnid,
   .textoUnid {
     font-size: 14px;
     padding: 0 20px;
@@ -491,8 +490,8 @@ button[type=submit]:hover {
   }
   .tituloUnid {
     font-size: 22px;
+    padding-bottom: 6px;
   }
-  .subtituloUnid,
   .textoUnid {
     font-size: 16px;
     padding: 0 20px;
@@ -522,8 +521,8 @@ button[type=submit]:hover {
   }
   .tituloUnid {
     font-size: 28px;
+    padding-bottom: 20px;
   }
-  .subtituloUnid,
   .textoUnid {
     font-size: 18px;
     padding: 0 40px;
@@ -1041,7 +1040,7 @@ footer {
   margin: auto;
   text-align: center;
   color: #b60043;
-  background-color: #ffffc1;
+  background-color: #CBBD93;
   padding: 20px;
 }
 
@@ -1181,7 +1180,7 @@ footer {
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
   z-index: 2;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.4em;
 }
 .iconosServicios .textoIconosServicios {
   position: relative;
@@ -1192,7 +1191,7 @@ footer {
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
   z-index: 20;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.2em;
   line-height: normal;
   letter-spacing: 0.5mm;
 }
@@ -1770,7 +1769,7 @@ html, body {
 .ubicacion {
   min-height: calc(100vh - 200px); /* Calcula la altura mínima de la ubicación para que el footer quede al final de la página para solucionar el problema de que el footer quedaba en el medio */
   width: 100%;
-  background-color: #ffffc1;
+  background-color: #CBBD93;
   display: flex;
   flex-direction: column; /* Asegura que los elementos internos se apilen verticalmente */
 }
@@ -1824,7 +1823,7 @@ html, body {
 
 .serviciosCercanos {
   height: auto;
-  background-color: #ffffc1;
+  background-color: #CBBD93;
 }
 .serviciosCercanos h2 {
   color: #b60043;
@@ -1838,7 +1837,7 @@ html, body {
   height: auto;
   padding: 20px;
   color: #b60043;
-  background-color: #ffffc1;
+  background-color: #CBBD93;
 }
 .mapaUbicacion img {
   padding: 20px;
@@ -2111,6 +2110,11 @@ html, body {
 .personalizar {
   margin-top: 100px;
   text-align: center;
+}
+.personalizar h2 {
+  padding-bottom: 20px;
+  color: #b60043;
+  font-family: "Urbanist", sans-serif;
 }
 .personalizar .fila {
   display: flex;

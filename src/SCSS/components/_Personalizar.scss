@@ -2,6 +2,12 @@
     margin-top: 100px;
     text-align: center;
 
+    h2{
+        padding-bottom: 20px;
+        color: $Componentes;
+        font-family: "Urbanist", sans-serif;
+    }
+
     .fila {
         display: flex; // Organiza las imágenes en fila
         justify-content: center; // Centra las imágenes
@@ -15,9 +21,6 @@
             border-radius: 5px; // Bordes redondeados opcionales
             transition: transform 0.2s ease-in-out;
 
-            &:hover {
-                
-            }
         }
     }
 

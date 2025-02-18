@@ -19,14 +19,12 @@ const Ubicacion = () => {
                     atractivos de la ciudad. Sus calles arboladas y su entorno sereno crean 
                     el escenario ideal para una estadía placentera, lejos del bullicio pero 
                     con fácil acceso a playas, comercios y paseos emblemáticos.
-                    <br/><br/>
                     Ubicado en una de las zonas más pintorescas de la ciudad, San Carlos
                     se distingue por su arquitectura encantadora y su atmósfera residencial. 
                     A pocos minutos del mar, ofrece vistas inigualables y la posibilidad de 
                     disfrutar de caminatas relajantes por sus alrededores. Además, cuenta 
                     con una variada oferta gastronómica y espacios culturales que enriquecen 
                     la experiencia de quienes lo visitan.
-                    <br/><br/>
                     Desde aquí, es sencillo acceder a puntos clave de Mar del Plata,
                     como el Faro, la costa de Punta Mogotes y el centro comercial Güemes. 
                     Su ubicación estratégica lo convierte en un lugar ideal para quienes 

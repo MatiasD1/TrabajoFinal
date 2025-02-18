@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import GaleriaImagenes from '../GaleriaImagenes/GaleriaImagenes.js';
-import CostaImagen from "../../img/costa.jpeg";
-import fotoExterior from "../../img/fotoExterior.jpg";
 import hab1a from "../../img/hab1a.jpg"; 
 import hab1b from "../../img/hab1b.jpeg";
 import hab1c from "../../img/hab1c.jpeg";
@@ -44,13 +42,11 @@ const Unidades = () => {
         <div className='Unidades'>    
             <Encabezado imageSrc={fotoEncabezado} seccion={"Unidades"}/>
             <div className='presentacionUnidades'>        
-                <h2 className='tituloPresentacionUnidades'>Te proponemos 4 opciones para garantizar tu descanso</h2>
+                <h2 className='tituloPresentacionUnidades'>
+                    Habitaciones & Suites: Confort y Elegancia Frente al Mar
+                </h2>
                 <p className='textoPresentacionUnidades'>
-                    Disponemos de 4 Unidades distribuidos en 2 plantas. Esto favorece la circulacion fluida por los espacios comunes y la privacidad de cada unidad.
-                    Cada Unidartamento cuenta con una baulera y un módulo de estacionamiento fijo, semicubierto, en el sector posterior del edificio, al que se puede acceder con facilidad.
-                    En el frente al sector de cocheras, están las bauleras, con una superficie promedio de xxm2.<br/><br/>
-                    Todos los Unidades tienen un desarrollo distinto, pero comparten la cualidad de la amplitud y del confort y la atencion enfocada en una decoracion con producciones artísticas que transmiten calma, paz o alegría,
-                    para reforzar las cualidades de Unidades con muchas necesidades cubiertas, donde poder pasarla bien.<br/> 
+                    Descubra un refugio de lujo diseñado para su descanso. Nuestras habitaciones y suites combinan confort, diseño sofisticado y vistas incomparables al mar. Ya sea que busque una estancia acogedora o una experiencia exclusiva, cada detalle ha sido pensado para brindarle el máximo bienestar. Elija la opción que mejor se adapte a su estilo y disfrute de una estadía inolvidable.
                 </p>
             </div>
             <div className="containerUnidades">
@@ -60,17 +56,9 @@ const Unidades = () => {
         <img src={hab1a} alt="Imagen 1" className='fotoUnid'/>
     </div>
     <div className="textoUnidades">
-        <h2 className='tituloUnid'>Unidartamento PB1</h2>
-            <p className='subtituloUnid'>
-                Tiene 2 ambientes y se desarrolla sobre una superficie de xx mts. cuadrados. 
-                Es un Unid. externo. Disponibilidad para 3 personas.
-            </p>
+        <h2 className='tituloUnid'>Doble Superior</h2>
             <p className='textoUnid'>
-                Cuenta con una cocina totalmente equipada; estar-comedor amplio, con una mesa de
-                0.80x1.60mts., sillas , sillones, 1 sofá cama de 1 plaza y un
-                smart tv 43”. Un espacio de trabajo compuesto por un escritorio, iluminación focalizada y una silla de oficina.
-                El dormitorio tiene 1 cama de dos plazas. La habitación conecta por doble circulación
-                con el baño ( que tiene ventilación natural) y el estar comedor .<br/>
+                Una combinación perfecta de confort y funcionalidad, disponible en formato matrimonial o twin para adaptarse a sus necesidades. Pensada para garantizar una estadía placentera, esta habitación cuenta con mobiliario elegante, un baño moderno y detalles cuidadosamente seleccionados para su descanso. Además, si viaja en familia o en grupo, tiene la posibilidad de conectar dos habitaciones, brindando mayor comodidad e independencia sin perder la cercanía con sus seres queridos.
             </p>
             <img src={aloeFooter} alt="icono flor decorativo" className='aloeFooter'/>
         </div>
@@ -82,17 +70,10 @@ const Unidades = () => {
             <img src={hab2a} alt="Imagen 1" className='fotoUnid'/>
         </div>
         <div className="textoUnidades">
-            <h2 className='tituloUnid'>Unidartamento PB2</h2>
-            <p className='subtituloUnid'>
-                Tiene 3 ambientes y 2 baños y se desarrolla en una superficie de 66 mts. cuadrados. Es un
-                Unidartamento interno. Disponibilidad para 4 personas.
-            </p>
+            <h2 className='tituloUnid'>Doble Lujo</h2>
+           
             <p className='textoUnid'>
-                Cuenta con una cocina totalmente equipada ; estar-comedor amplio, con una mesa de
-                0.8x1.60mts, sillas ,sillones y un smart tv de 43”. Tiene un baño de uso general dividido en dos
-                espacios: toilette y baño prop. dicho, con ventilación natural y extractor de aire. 1 habitación con
-                dos camas de 1 plaza y un placard grande.1 habitación con una cama de 2 plazas y 2 placares , en
-                suite con el otro baño, que también tiene ventilación natural y extractor de aire.<br />
+                Con todas las comodidades de la Doble Superior, pero con el valor agregado de una vista privilegiada al mar. Despiértese cada mañana con la brisa oceánica y disfrute de un amanecer inolvidable desde la tranquilidad de su habitación. Diseñada para quienes buscan una experiencia más exclusiva, esta opción combina elegancia, confort y la posibilidad de contemplar las mejores visuales de la costa marplatense sin salir de su espacio privado.
             </p>
             <img src={aloeFooter} alt="icono flor decorativo" className='aloeFooter'/>
         </div>
@@ -104,17 +85,10 @@ const Unidades = () => {
             <img src={hab3a} alt="Imagen 1" className='fotoUnid'/>
         </div>
         <div className="textoUnidades">
-            <h2 className='tituloUnid'>Unidartamento PA1</h2>
-            <p className='subtituloUnid'>
-                Tiene 3 ambientes y 2 baños, se desarrolla en dos niveles; ocupa una superficie de 83 mts.
-                cuadrados. Es un Unidartamento externo. Disponibilidad para 4 personas.
-            </p>
+            <h2 className='tituloUnid'>Suite Superior</h2>
+           
             <p className='textoUnid'>
-                La planta baja tiene una cocina totalmente equipada; estar-comedor amplio, con una mesa de
-                0.80x1.60mts, sillas , sillones y un smart tv de 43”. Un baño de uso general y el dormitorio
-                principal, que es grande, con una cama de 2 plazas, un vestidor con dos placares, que conecta
-                con un baño en suite que tiene ventilación exterior. Desde el comedor o desde la habitación se
-                tiene acceso a un balcón de 9 mts. cuadrados.<br />
+                Un espacio amplio y sofisticado de 40 m², pensado para quienes desean mayor confort durante su estadía. La Suite Superior cuenta con un baño en suite de diseño moderno, un área de estar con sillón y escritorio, y grandes ventanales que enmarcan vistas panorámicas del mar y la playa. Cada detalle ha sido seleccionado para ofrecer una experiencia de lujo relajado, combinando amplitud, privacidad y una atmósfera serena para su descanso.
             </p>
             <img src={aloeFooter} alt="icono flor decorativo" className='aloeFooter'/>                    
         </div>
@@ -126,19 +100,10 @@ const Unidades = () => {
             <img src={hab4a} alt="Imagen 1" className='fotoUnid'/>
         </div>
         <div className="textoUnidades">
-            <h2 className='tituloUnid'>Unidartamento PA2</h2>
-            <p className='subtituloUnid'>
-                Tiene 3 ambientes y 2 baños, se desarrolla en dos niveles; ocupa una superficie de 66 mts.
-                cuadrados. Es un Unidartamento interno. Disponibilidad para 4 personas.
-            </p>
+            <h2 className='tituloUnid'>Suite Presidencial</h2>
+            
             <p className='textoUnid'>
-                En la planta baja tiene una cocina totalmente equipada; estar-comedor amplio, con una mesa de
-                0.80x1.60mts, sillas , sillones y un smart tv de 43”. Un espacio de trabajo compuesto por un escritorio, iluminación focalizada y una silla de oficina.
-                Un baño de uso general con ventilación al
-                exterior y un dormitorio con 2 camas de 1 plaza y un placard grande.
-                El nivel superior es un altillo de ..x.. mts. donde hay 1 dormitorio con una cama de 2 plazas y un
-                placard grande. Conecta a un vestidor y a un baño en suite. El vanitory está integrado al ambiente
-                del dormitorio.<br />
+                La máxima expresión del confort y la exclusividad. Esta lujosa suite cuenta con un balcón privado completamente vidriado y un solárium donde podrá relajarse disfrutando de la mejor vista del mar. Su diseño incluye un amplio living para momentos de descanso o reuniones privadas, una cocina equipada con desayunador y una habitación espaciosa con baño en suite, dotado de las máximas comodidades. Además, un elegante escritorio le permite disponer de un espacio de trabajo en caso de ser necesario. Cada rincón de la Suite Presidencial ha sido diseñado para brindar una experiencia única de lujo y sofisticación. 
             </p>
             <img src={aloeFooter} alt="icono flor decorativo" className='aloeFooter'/>
         </div>
