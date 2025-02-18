@@ -13,12 +13,11 @@ import primerosAuxilios from '../../img/icons/primerosAuxilios.png'
 import alarma from '../../img/icons/alarma.png' 
 import cajaSeguridad from '../../img/icons/cajaSeguridad.png' 
 import secador from '../../img/icons/secador1.png' 
-import arena from '../../img/arena.jpg' 
 
 function IconosServicios() {
     return (
        <div className='iconosServicios'>
-        <h1>Lo que ofrecemos</h1>
+        <h1>Lo que ofrecemos en cada habitación</h1>
             <p className='textoIconosServicios'>Te brindamos mucho de lo que podes necesitar para <br/>
                 que tu ocupación esencial sea disfrutar cada día. 
             </p>
@@ -32,7 +31,7 @@ function IconosServicios() {
                     </div>
                     <div className='icono'>
                         <img src={calefaccion} alt="Icono calefaccion más"/>
-                        <p>Calefacción<br/>por radiadores</p>
+                        <p>Calefacción</p>
                     </div>
                     <div className='icono'>
                         <img src={wifi} alt="Icono wifi"/>

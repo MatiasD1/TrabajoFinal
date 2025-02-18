@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importar Bootstrap JS para el carrusel
-import fotoPieza from "../../img/fotoPieza.jpg";
-import fotoExterior from "../../img/fotoExterior.jpg";
-import fotoSala from "../../img/fotoSala.jpg";
+import fotoExterior from "../../img/fotoExterior.jpg"
+import fotoPortada from "../../img/opciones/portada.jpg";
+import fotoPileta from "../../img/fotoSala.jpg";
 import flechaDer from "../../img/icons/flechaDer.png";
 import flechaIzq from "../../img/icons/flechaIzq.png";
 
@@ -35,15 +35,15 @@ const Carrusel = () => {
                 <div className="carousel-inner carrusel">
                     <div className="carousel-item active">
                         <img src={fotoExterior} className="d-block w-100" alt="Foto del exterior" />
-                        <p className='textoCarruselInicio'>Tu refugio cerca del mar donde conectar con el bienestar</p>
+                        <p className='textoCarruselInicio'>Lujo, confort y exclusividad en cada detalle</p>
                     </div>
                     <div className="carousel-item">
-                        <img src={fotoPieza} className="d-block w-100" alt="Foto de la pieza" />
-                        <p className='textoCarruselInicio'>Vivir las vacaciones que merecés</p>
+                        <img src={fotoPortada} className="d-block w-100" alt="Foto de la pieza" />
+                        <p className='textoCarruselInicio'>Personalizá cada rincón de tu experiencia</p>
                     </div>
                     <div className="carousel-item">
-                        <img src={fotoSala} className="d-block w-100" alt="Foto de la sala" />
-                        <p className='textoCarruselInicio'>Encontrar paz y privacidad</p>
+                        <img src={fotoPileta} className="d-block w-100" alt="Foto de la sala" />
+                        <p className='textoCarruselInicio'>Una estancia inolvidable en un entorno único</p>
                     </div>
                 </div>
                 {/*Compartir momentos memorables*/}

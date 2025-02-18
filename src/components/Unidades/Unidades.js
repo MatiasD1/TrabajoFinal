@@ -2,11 +2,18 @@ import React, { useState } from 'react';
 import GaleriaImagenes from '../GaleriaImagenes/GaleriaImagenes.js';
 import CostaImagen from "../../img/costa.jpeg";
 import fotoExterior from "../../img/fotoExterior.jpg";
-import fotoPieza from "../../img/fotoPieza.jpg"; 
-import fotoDucha from "../../img/Ducha.JPG"
-import fotoHabitacion from "../../img/fotoHabitacion.JPG"
-import fotoSala from "../../img/fotoSala.jpg"
-import living from "../../img/Living.JPG"
+import hab1a from "../../img/hab1a.jpg"; 
+import hab1b from "../../img/hab1b.jpeg";
+import hab1c from "../../img/hab1c.jpeg";
+import hab2a from "../../img/hab2a.jpg"; 
+import hab2b from "../../img/hab2b.jpeg";
+import hab2c from "../../img/hab2c.jpeg";
+import hab3a from "../../img/hab3a.jpg"; 
+import hab3b from "../../img/hab3b.jpeg";
+import hab3c from "../../img/hab3c.jpeg";
+import hab4a from "../../img/hab4a.jpg"; 
+import hab4b from "../../img/hab4b.jpg";
+import hab4c from "../../img/hab4c.jpg";
 import simboloMas from "../../img/icons/simboloMas.png" 
 import aloeFooter from '../../img/icons/aloeFooter.png' 
 import imagenPlaya from '../../img/playa.jpg'
@@ -21,10 +28,10 @@ const Unidades = () => {
 
 
     // Arreglos de imágenes específicos para cada unidad
-    const unidad1Images = [fotoExterior, fotoHabitacion, living];
-    const unidad2Images = [fotoPieza, fotoSala, fotoDucha];
-    const unidad3Images = [fotoExterior, living, CostaImagen];
-    const unidad4Images = [fotoPieza, fotoHabitacion, fotoSala];
+    const unidad1Images = [hab1a, hab1b, hab1c];
+    const unidad2Images = [hab2a, hab2b, hab2c];
+    const unidad3Images = [hab3a, hab3b, hab3c];
+    const unidad4Images = [hab4a, hab4b, hab4c];
 
     // Maneja el clic en una imagen, abriendo el carrusel desde esa imagen específica
     const handleImageClick = (unidadImages) => {
@@ -50,7 +57,7 @@ const Unidades = () => {
             <div className="item Unid1">
     <div className='fotosUnids' onClick={() => handleImageClick(unidad1Images)}>
         <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
-        <img src={fotoExterior} alt="Imagen 1" className='fotoUnid'/>
+        <img src={hab1a} alt="Imagen 1" className='fotoUnid'/>
     </div>
     <div className="textoUnidades">
         <h2 className='tituloUnid'>Unidartamento PB1</h2>
@@ -72,7 +79,7 @@ const Unidades = () => {
     <div className="item Unid2">
         <div className='fotosUnids' onClick={() => handleImageClick(unidad2Images)}>
             <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
-            <img src={fotoExterior} alt="Imagen 1" className='fotoUnid'/>
+            <img src={hab2a} alt="Imagen 1" className='fotoUnid'/>
         </div>
         <div className="textoUnidades">
             <h2 className='tituloUnid'>Unidartamento PB2</h2>
@@ -94,7 +101,7 @@ const Unidades = () => {
     <div className="item Unid3">
         <div className='fotosUnids' onClick={() => handleImageClick(unidad3Images)}>
             <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
-            <img src={fotoExterior} alt="Imagen 1" className='fotoUnid'/>
+            <img src={hab3a} alt="Imagen 1" className='fotoUnid'/>
         </div>
         <div className="textoUnidades">
             <h2 className='tituloUnid'>Unidartamento PA1</h2>
@@ -116,7 +123,7 @@ const Unidades = () => {
     <div className="item Unid4">
         <div className='fotosUnids' onClick={() => handleImageClick(unidad4Images)}>
             <img src={simboloMas} alt="Simbolo Mas" className='fotoSimbolo'/>
-            <img src={fotoPieza} alt="Imagen 1" className='fotoUnid'/>
+            <img src={hab4a} alt="Imagen 1" className='fotoUnid'/>
         </div>
         <div className="textoUnidades">
             <h2 className='tituloUnid'>Unidartamento PA2</h2>

@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import GaleriaImagenes from '../GaleriaImagenes/GaleriaImagenes';
-import CostaImagen from "../../img/costa.jpeg";
-import fotoExterior from "../../img/fotoExterior.jpg";
-import fotoPieza from "../../img/fotoPieza.jpg"; 
-import fotoHabitacion from "../../img/fotoHabitacion.JPG"
+import galeriaInicio1 from '../../img/galeriaInicio1.jpg'
+import galeriaInicio2 from '../../img/galeriaInicio2.jpg'
+import galeriaInicio3 from '../../img/galeriaInicio3.jpg'
+import galeriaInicio4 from '../../img/galeriaInicio4.jpg'
+import galeriaInicio5 from '../../img/galeriaInicio5.jpg'
+import galeriaInicio6 from '../../img/galeriaInicio6.jpg'
+import galeriaInicio7 from '../../img/galeriaInicio7.jpg'
+import galeriaInicio8 from '../../img/galeriaInicio8.jpg'
 import simboloMas from "../../img/icons/simboloMas.png" 
-import villaVictoria from "../../img/villaVictoria.jpg";
-import torreAgua from "../../img/torreDelAgua.jpg";
-import centroGuemes from "../../img/centroGuemes.jpg";
-import playaVarese from "../../img/playaVarese.jpg";
+
 
 const GaleriaInicio = () => {
     const [showCarrusel, setShowCarrusel] = useState(false);
@@ -16,14 +17,14 @@ const GaleriaInicio = () => {
     
     // Lista completa de imágenes para el carrusel
     const images = [
-        fotoPieza,
-        CostaImagen,
-        fotoExterior,
-        fotoHabitacion, 
-        villaVictoria,
-        torreAgua,
-        centroGuemes,
-        playaVarese,
+        galeriaInicio1,
+        galeriaInicio2,
+        galeriaInicio3,
+        galeriaInicio5,
+        galeriaInicio4, 
+        galeriaInicio7,
+        galeriaInicio6,
+        galeriaInicio8,
         // Asegúrate de agregar aquí todas las imágenes disponibles
         // Agrega más URLs de imágenes aquí según sea necesario
     ];

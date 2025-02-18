@@ -68,6 +68,7 @@ $color6: #464646; //texto oscuro
   animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
   font-family: "Urbanist", sans-serif;
+  white-space: nowrap;
 }
 
 /* Definir la animación fadeIn */
@@ -123,7 +124,7 @@ $color6: #464646; //texto oscuro
   width: 100%;
   height: auto;
   padding-top: 60px;
-  background-image: url("/absolute/../src/img/barcos23.jpg");
+  background-image: url("/absolute/../src/img/fotoExterior2.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
