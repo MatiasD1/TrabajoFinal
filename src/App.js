@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Inicio from './components/Inicio/Inicio';
-import Departamentos from './components/Departamentos/Departamentos';
+import Unidades from './components/Unidades/Unidades';
 import Servicios from './components/Servicios/Servicios'
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
@@ -38,7 +38,7 @@ function App() {
         <NavBar isVisible={isVisible} />
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/departamentos" element={<Departamentos />} />
+          <Route path="/unidades" element={<Unidades />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/ubicacion" element={<Ubicacion />} />
           <Route path="/contacto" element={<Contacto />} />

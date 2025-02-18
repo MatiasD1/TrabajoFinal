@@ -8,11 +8,7 @@ import 'swiper/css/navigation';
 import flechaDer from "../../img/icons/flechaDer.png";
 import flechaIzq from "../../img/icons/flechaIzq.png";
 
-import parqueSanMartin from "../../img/parqueSanMartin.jpg";
-import centroPuerto from "../../img/centroPuerto.jpg";
-import balnearioPuntaMogotes from "../../img/balnearioPuntaMogotes.jpg";
-
-export default () => {
+const Swiper3 = ({ images }) => {
   return (
     <div className="swiper-container">
       <Swiper
@@ -21,28 +17,16 @@ export default () => {
         slidesPerView={1}
         loop={true}
         navigation={{
-            prevEl: '.swiper-button-prev-custom',
-            nextEl: '.swiper-button-next-custom',
+          prevEl: '.swiper-button-prev-custom',
+          nextEl: '.swiper-button-next-custom',
         }}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
       >
-        <SwiperSlide>
-          <img src={parqueSanMartin} alt="Slide 1" className="slide-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={centroPuerto} alt="Slide 2" className="slide-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={balnearioPuntaMogotes} alt="Slide 3" className="slide-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={parqueSanMartin} alt="Slide 4" className="slide-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={centroPuerto} alt="Slide 5" className="slide-image" />
-        </SwiperSlide>
+        {images.map((img, index) => (
+          <SwiperSlide key={index}>
+            <img src={img} alt={`Slide ${index + 1}`} className="slide-image" />
+          </SwiperSlide>
+        ))}
 
         <div className="swiper-button-prev-custom swiper-button-custom">
           <img src={flechaIzq} alt="Previous" />
@@ -54,3 +38,5 @@ export default () => {
     </div>
   );
 };
+
+export default Swiper3;

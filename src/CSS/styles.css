@@ -351,7 +351,7 @@ button[type=submit]:hover {
   object-fit: cover;
 }
 
-.departamentos {
+.Unidades {
   width: 100%;
   height: auto;
   position: relative;
@@ -359,46 +359,46 @@ button[type=submit]:hover {
   background-color: #ffffc1; /* Asegúrate de reemplazar con el color correcto */
 }
 
-.presentacionDepartamentos {
+.presentacionUnidades {
   padding: 40px;
 }
-.presentacionDepartamentos h2 {
+.presentacionUnidades h2 {
   padding-bottom: 20px;
   color: #b60043;
   font-family: "Urbanist", sans-serif;
 }
-.presentacionDepartamentos p {
+.presentacionUnidades p {
   color: #333333;
   font-size: 18px;
   padding: 0px 20px;
   font-family: "Urbanist", sans-serif;
 }
 
-.containerDepartamentos {
-  padding: 20px 20px 5px 20px;
-  display: flex;
-  flex-direction: column;
+.containerUnidades {
+  display: grid;
+  grid-template-columns: 1fr; /* Asegura que cada item ocupe toda la fila */
+  gap: 20px;
+  width: 100%;
 }
 
 .item {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten */
-  margin-bottom: 0; /* Elimina márgenes entre filas */
-  min-height: 350px; /* Mantiene una altura mínima de fila */
+  align-items: stretch;
+  width: 100%;
+  min-height: 200px;
 }
 
-.fotosDeptos, .textoDepartamentos {
+.fotosUnids, .textoUnidades {
   flex: 1;
 }
 
-.fotosDeptos {
+.fotosUnids {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  padding: 0; /* Elimina el padding para que las imágenes se toquen */
-  height: 100%; /* Ajusta la altura para que sea proporcional */
+  width: 50%; /* O el valor que prefieras */
+  height: 250px; /* Asigna una altura fija para todas las imágenes */
   overflow: hidden;
   position: relative;
   background-color: black;
@@ -414,25 +414,25 @@ button[type=submit]:hover {
   transition: opacity 0.3s, transform 0.3s;
 }
 
-.fotoDepto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.fotoUnid {
+  width: 100%; /* Se asegura de que ocupe todo el ancho */
+  height: 100%; /* Se asegura de que ocupe toda la altura */
+  object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
   transition: 0.3s;
   background-color: black !important;
 }
 
-.fotoDepto:hover {
+.fotoUnid:hover {
   cursor: pointer;
   opacity: 0.7;
 }
 
-.fotosDeptos:hover .fotoSimbolo {
+.fotosUnids:hover .fotoSimbolo {
   display: block;
   cursor: pointer;
 }
 
-.textoDepartamentos {
+.textoUnidades {
   font-family: "Urbanist", sans-serif;
   color: #333333;
   padding-top: 20px; /* Elimina padding para que se ajuste al contenedor */
@@ -443,10 +443,10 @@ button[type=submit]:hover {
   position: relative;
   min-height: 200px; /* Ajusta la altura mínima para asegurar que el icono esté en la parte inferior */
 }
-.textoDepartamentos h2 {
+.textoUnidades h2 {
   color: #b60043;
 }
-.textoDepartamentos .aloeFooter {
+.textoUnidades .aloeFooter {
   width: 30px;
   height: auto;
   display: block;
@@ -456,92 +456,82 @@ button[type=submit]:hover {
 
 /* Móviles (hasta 767px) */
 @media (max-width: 767px) {
-  .presentacionDepartamentos h2 {
+  .presentacionUnidades h2 {
     font-size: 24px;
   }
   .item {
     flex-direction: column;
-    min-height: auto; /* Altura automática para móviles */
+    min-height: auto;
   }
-  .fotosDeptos {
+  .fotosUnids {
     width: 100%;
-    height: 200px; /* Ajusta la altura para móviles */
+    height: 200px;
   }
-  .tituloDepto {
-    font-size: 20px; /* Tamaño más pequeño para pantallas pequeñas */
+  .tituloUnid {
+    font-size: 20px;
   }
-  .subtituloDepto {
-    font-size: 16px; /* Tamaño ajustado para pantallas pequeñas */
-    padding: 0px 20px;
-  }
-  .textoDepto {
-    font-size: 12px; /* Tamaño ajustado para pantallas pequeñas */
-    padding: 0px 20px;
+  .subtituloUnid,
+  .textoUnid {
+    font-size: 14px;
+    padding: 0 20px;
   }
   .aloeFooter {
-    width: 20px; /* Tamaño más pequeño para móviles */
-    margin: 0px 20px; /* Añade espacio superior e inferior para móviles */
+    width: 20px;
+    margin: 0px auto 10px;
   }
 }
 /* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .presentacionDepartamentos h2 {
-    font-size: 34px;
+  .presentacionUnidades h2 {
+    font-size: 30px;
   }
-  .fotosDeptos {
-    height: 100%; /* Asegúrate de que la altura sea 100% de la fila */
+  .fotosUnids {
+    height: 100%;
   }
-  .tituloDepto {
-    font-size: 22px; /* Tamaño ajustado para pantallas medianas */
+  .tituloUnid {
+    font-size: 22px;
   }
-  .subtituloDepto {
-    font-size: 18px; /* Tamaño ajustado para pantallas medianas */
-    padding: 0px 20px;
-  }
-  .textoDepto {
-    font-size: 14px; /* Tamaño ajustado para pantallas medianas */
-    padding: 0px 20px;
+  .subtituloUnid,
+  .textoUnid {
+    font-size: 16px;
+    padding: 0 20px;
   }
   .aloeFooter {
-    width: 25px; /* Tamaño ajustado para tabletas */
-    margin: 20px auto 20px; /* Añade margen superior e inferior para tabletas */
+    width: 25px;
+    margin: 15px auto;
   }
-  .dep2, .dep4 {
+  .Unid2, .Unid4 {
     flex-direction: row-reverse;
   }
 }
 /* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
-  .presentacionDepartamentos h2 {
+  .presentacionUnidades h2 {
     font-size: 36px;
   }
-  .containerDepartamentos {
+  .containerUnidades {
     padding: 20px;
   }
   .item {
     flex-direction: row;
-    min-height: 350px; /* Mantiene una altura mínima para pantallas grandes */
+    min-height: 350px;
   }
-  .fotosDeptos {
-    height: 100%; /* Ajusta la altura para pantallas grandes */
+  .fotosUnids {
+    height: 100%;
   }
-  .tituloDepto {
-    font-size: 28px; /* Tamaño ajustado para pantallas grandes */
+  .tituloUnid {
+    font-size: 28px;
   }
-  .subtituloDepto {
-    font-size: 18px; /* Tamaño ajustado para pantallas grandes */
-    font-weight: 500;
-    padding: 0px 40px;
-  }
-  .textoDepto {
-    font-size: 18px; /* Tamaño ajustado para pantallas grandes */
-    padding: 0px 40px;
+  .subtituloUnid,
+  .textoUnid {
+    font-size: 18px;
+    padding: 0 40px;
   }
   .aloeFooter {
-    width: 30px; /* Tamaño ajustado para pantallas grandes */
-    margin: 30px auto 30px; /* Añade un margen inferior para pantallas grandes */
+    width: 30px;
+    margin: 30px auto;
   }
-  .dep2, .dep4 {
+  .Unid2, .Unid4 {
     flex-direction: row-reverse;
   }
 }

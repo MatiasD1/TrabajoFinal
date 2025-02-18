@@ -13,25 +13,19 @@ const Ubicacion = () => {
                 <p className='fraseUbicacion'>Barrio San Carlos , un lugar que nos invita a
                 quedarnos.</p>
                 <p className='textoUbicacion'>
-                    Puerto Bueno está en el Barrio San Carlos, que es un barrio residencial pegado al campo de golf
-                    del Club de Golf Mar del Plata. Es un lugar de fácil acceso, sereno y seguro. Ideal para quienes
-                    buscan paz y tranquilidad en sus vacaciones. Está muy cerca de la intensidad de Playa Grande,
-                    pero no se ve influido ni por el ruido ni por el tráfico; propiciando un entorno pacífico para
-                    relajarse y descansar.<br/><br/>
-                    Predominan las casas de no más de dos plantas, con jardines cuidados y sobre lotes grandes; las
-                    calles están bien conservadas y limpias.
-                    Puerto Bueno está muy próximo a una amplia gama de comodidades y servicios:
-                    A 6 cuadras de nuestro complejo de deptos. está el centro comercial de la calle Alem , con una
-                    interesante oferta gastronómica. Simultáneamente brinda una estructura de servicios que
-                    resuelve el día a día: supermercados, farmacias, verdulerías, panaderías, rotiserías, lavaderos,
-                    asistencia médica, gimnasios, etc. . Esto se complementa con los servicios disponibles en el centro
-                    comercial y gastronómico del Puerto, donde se incluyen las sucursales de los bancos más
-                    importantes, y que dista solo 8 cuadras de nuestra dirección.
-                    El Parque Primavesi, a escasas cuatro cuadras, es un área recreativa clásica de Mar del Plata, ideal
-                    para disfrutar de actividades al aire libre, hacer ejercicio o simplemente distenderse y disfrutar de
-                    la naturaleza.
-                    En un radio de una cuadra respecto de nuestra dirección hay tres paradas de transporte púbico.
-            </p>
+                    Estamos ubicados en la bahía de Punta Mogotes,
+                    la cual se destaca por su tranquilidad y por
+                    su hermosa vista a las mejores playas de la ciudad.
+                    <br/><br/>
+                    Todo el corredor de playas del sur y Punta Mogotes
+                    se encuentra a pocos minutos, así como el centro comercial 
+                    y gastronómico de las calles Alem, Güemes y Puerto.
+                    <br/><br/>
+                    La llegada al hotel desde Ruta 2 por Constitución
+                    y siguiendo toda la ruta costera suma una experiencia
+                    de contacto con el mar y la arquitectura frente al mar 
+                    que auguran el inicio de esta experiencia única.
+                </p>
             </div>
             <div className='owlComponenteCarrusel'>
             <Swiper2 className="swiperUbicacion" />

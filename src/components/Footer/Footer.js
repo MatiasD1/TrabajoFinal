@@ -13,7 +13,7 @@ function Footer() {
             <div className='columnaFooter'>
                 <h3>Accesos Rápidos</h3>
                 <a className="accesoNav" href="/">Inicio</a>
-                <a className="accesoNav" href="/Departamentos">Departamentos</a>
+                <a className="accesoNav" href="/Unidades">Unidades</a>
                 <a className="accesoNav" href="/Servicios">Servicios</a>
                 <a className="accesoNav" href="/Ubicacion">Ubicacion</a>
                 <a className="accesoNav" href="/Contacto">Contacto</a>
