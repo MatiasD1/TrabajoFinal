@@ -1,5 +1,5 @@
 .presentacionInicio {
-    padding: 20px; /* Espaciado general */
+    padding: 20px; 
     text-align: center;
 
     .tituloInicio {
@@ -22,14 +22,14 @@
 /* Móviles (hasta 767px) */
 @media (max-width: 767px) {
     .presentacionInicio {
-        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+        padding: 10px; 
 
         .tituloInicio {
-            font-size: 2rem; /* Disminuye el tamaño del título */
+            font-size: 2rem; 
         }
 
         .textoInicio {
-            font-size: 1rem; /* Ajusta el tamaño del texto */
+            font-size: 1rem; 
             line-height: 1.4;
         }
     }
@@ -38,14 +38,14 @@
 /* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .presentacionInicio {
-        padding: 15px; /* Ajusta el padding para tabletas */
+        padding: 15px; 
 
         .tituloInicio {
-            font-size: 2.3rem; /* Tamaño del título ligeramente más pequeño */
+            font-size: 2.3rem; 
         }
 
         .textoInicio {
-            font-size: 1.1rem; /* Ajusta el tamaño del texto */
+            font-size: 1.1rem; 
             line-height: 1.5;
         }
     }
@@ -54,14 +54,14 @@
 /* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
     .presentacionInicio {
-        padding: 30px; /* Mayor padding para pantallas grandes */
+        padding: 30px; 
 
         .tituloInicio {
-            font-size: 3rem; /* Aumenta el tamaño del título */
+            font-size: 3rem; 
         }
 
         .textoInicio {
-            font-size: 1.3rem; /* Tamaño más grande para el texto */
+            font-size: 1.3rem; 
             line-height: 1.7;
         }
     }
