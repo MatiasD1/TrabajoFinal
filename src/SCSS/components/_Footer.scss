@@ -1,7 +1,7 @@
 footer {
     padding-top: 20px;
     width: 100%;
-    background-color: black;
+    background-color:$Fondo2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
@@ -48,8 +48,8 @@ footer {
 .logosRedes {
     display: flex;
     gap: 50px;
-    margin: 20px auto; /* Ajustar para que no cause desbordamiento */
-    max-width: 300px; /* Limitar el ancho máximo para evitar desbordamiento */
+    margin: 20px auto; 
+    max-width: 300px; 
 }
 
 .logoRed img {
@@ -78,15 +78,15 @@ footer {
     font-weight: 300;
 }
 
-/* Estilos responsivos */
+/* Media Queries */
 
-/* Móviles (hasta 767px) */
+
 @media (max-width: 767px) {
     footer {
-        height: auto; /* Ajustar para contenido dinámico */
+        height: auto; 
         padding-top: 20px;
-        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas más pequeñas */
-        text-align: center; /* Centrar contenido */
+        grid-template-columns: 1fr; 
+        text-align: center; 
         margin: 0;
     }
 
@@ -96,27 +96,26 @@ footer {
 
     .columnaFooter {
         h3, p {
-            display: none; /* Ocultar títulos y párrafos en pantallas pequeñas */
+            display: none; 
         }
     }
 
     .logosRedes {
         display: flex;
-        flex-wrap: wrap; /* Permite que los íconos se envuelvan si no hay suficiente espacio */
-        justify-content: center; /* Centra los íconos horizontalmente */
-        margin: 0px auto; /* Ajustar margen */
-        gap: 20px; /* Espacio entre los íconos */
+        flex-wrap: wrap; 
+        justify-content: center; 
+        margin: 0px auto; 
+        gap: 20px; 
     }
 
     .logoRed img {
-        width: 40px; /* Ajustar tamaño de los íconos */
-        height: 40px; /* Ajustar tamaño de los íconos */
-        margin: 0; /* Eliminar márgenes adicionales */
+        width: 40px;
+        height: 40px; 
+        margin: 0; 
         padding: 0px;
     }
 }
 
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     footer {
         padding-top: 20px;
@@ -125,49 +124,48 @@ footer {
 
     .columnaFooter {
         h3 {
-            font-size: 20px; /* Tamaño reducido para pantallas medianas */
+            font-size: 20px; 
         }
 
         p {
-            font-size: 12px; /* Tamaño reducido para pantallas medianas */
-            max-width: 200px; /* Ampliar ancho máximo para pantallas medianas */
+            font-size: 12px; 
+            max-width: 200px; 
         }
     }
 
     .logosRedes {
-        max-width: 250px; /* Ajustar ancho máximo en pantallas medianas */
+        max-width: 250px; 
     }
 
     .logoRed img {
-        width: 45px; /* Ajustar tamaño de los íconos */
-        height: 45px; /* Ajustar tamaño de los íconos */
+        width: 45px; 
+        height: 45px; 
     }
 }
 
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
     footer {
         padding-top: 20px;
-        grid-template-columns: 1fr 1fr 1fr; /* Tres columnas en pantallas grandes */
+        grid-template-columns: 1fr 1fr 1fr; 
     }
 
     .columnaFooter {
         h3 {
-            font-size: 25px; /* Tamaño normal para pantallas grandes */
+            font-size: 25px; 
         }
 
         p {
-            font-size: 14px; /* Tamaño normal para pantallas grandes */
-            max-width: 150px; /* Ancho máximo normal para pantallas grandes */
+            font-size: 14px; 
+            max-width: 150px; 
         }
     }
 
     .logosRedes {
-        max-width: 300px; /* Ancho máximo normal en pantallas grandes */
+        max-width: 300px; 
     }
 
     .logoRed img {
-        width: 50px; /* Tamaño normal de los íconos */
-        height: 50px; /* Tamaño normal de los íconos */
+        width: 50px; 
+        height: 50px; 
     }
 }

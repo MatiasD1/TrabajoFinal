@@ -4,6 +4,8 @@ import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 
 const Contacto = () => {
+
+    // Estado para almacenar los datos del formulario
     const [formData, setFormData] = useState({
         nombre: "",
         fechaEntrada: "",
@@ -13,23 +15,27 @@ const Contacto = () => {
         mensaje: ""
     });
 
+    // Estado para gestionar la carga al enviar el formulario
     const [loading, setLoading] = useState(false);
+    // Hook para la navegación programática en React Router
     const navigate = useNavigate();
 
+    // Función para manejar los cambios en los campos del formulario
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
-            ...formData,
-            [name]: value
+            ...formData, // Mantiene los valores previos
+            [name]: value // Actualiza solo el campo modificado
         });
     };
 
+    // Función para manejar el envío del formulario
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true);
+        e.preventDefault(); // Evita la recarga de la página
+        setLoading(true); // Indica que el envío está en proceso
 
         try {
-            // Verificar si el email ya está registrado
+            // Verifica si el email ya está registrado
             const q = query(collection(db, "contactos"), where("email", "==", formData.email));
             const querySnapshot = await getDocs(q);
 
@@ -39,7 +45,7 @@ const Contacto = () => {
                 return;
             }
 
-            // Si no existe, registrar la nueva reserva
+            // Si no existe, registra la nueva reserva
             const docRef = await addDoc(collection(db, "contactos"), formData);
             alert("Formulario enviado con éxito");
             setFormData({ nombre: "", fechaEntrada: "", fechaSalida: "", cantidadPersonas: "", email: "", mensaje: "" });
@@ -66,8 +72,9 @@ const Contacto = () => {
                     <input type="email" placeholder="Email" name="email" value={formData.email} onChange={handleChange} required />
                     <textarea placeholder="Mensaje" name="mensaje" value={formData.mensaje} onChange={handleChange}></textarea>
                     
+                    {/* Muestra un mensaje de carga mientras se envía el formulario */}
                     {loading && <p>Cargando...</p>}
-                    
+                    {/* Botón de envío, deshabilitado mientras se carga */}
                     <button type="submit" disabled={loading}>
                         {loading ? "Enviando..." : "Enviar"}
                     </button>
@@ -78,3 +85,5 @@ const Contacto = () => {
 };
 
 export default Contacto;
+
+

@@ -3,7 +3,7 @@
     height: auto;
     position: relative;
     z-index: 1;
-    background-color: $Fondo; /* Asegúrate de reemplazar con el color correcto */
+    background-color: $Fondo; 
 }
 
 .presentacionUnidades{
@@ -23,7 +23,7 @@
 }
 .containerUnidades {
     display: grid;
-    grid-template-columns: 1fr; /* Asegura que cada item ocupe toda la fila */
+    grid-template-columns: 1fr; 
     gap: 20px;
     width: 100%;
 }
@@ -33,7 +33,7 @@
     flex-direction: row;
     align-items: stretch;
     width: 100%;
-    min-height: 200px; // Asegura que cada fila tenga altura mínima
+    min-height: 200px; 
 }
 
 .fotosUnids, .textoUnidades {
@@ -44,8 +44,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%; /* O el valor que prefieras */
-    height: 250px; /* Asigna una altura fija para todas las imágenes */
+    width: 50%;
+    height: 250px; 
     overflow: hidden;
     position: relative;
     background-color: black;
@@ -62,9 +62,9 @@
 }
 
 .fotoUnid {
-    width: 100%;   /* Se asegura de que ocupe todo el ancho */
-    height: 100%;  /* Se asegura de que ocupe toda la altura */
-    object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
+    width: 100%;   
+    height: 100%;  
+    object-fit: cover; 
     transition: 0.3s;
     background-color: black !important;
 }
@@ -82,13 +82,13 @@
 .textoUnidades {
     font-family:'Urbanist', sans-serif;
     color: $TextoNegro;
-    padding-top: 20px; /* Elimina padding para que se ajuste al contenedor */
+    padding-top: 20px; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Asegura que el contenido y el icono estén distribuidos */
+    justify-content: space-between; 
     position: relative;
-    min-height: 200px; /* Ajusta la altura mínima para asegurar que el icono esté en la parte inferior */
+    min-height: 200px; 
 
     h2 {
         color: $Componentes;
@@ -98,12 +98,13 @@
         width: 30px;
         height: auto;
         display: block;
-        margin: auto; /* Centra el icono y añade espacio alrededor */
+        margin: auto; 
         margin-bottom: 10px;
     }
 }
 
-/* Móviles (hasta 767px) */
+/* Media Queries */
+
 @media (max-width: 767px) {
     .presentacionUnidades h2 {
         font-size: 24px;
@@ -134,7 +135,6 @@
     }
 }
 
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .presentacionUnidades h2 {
         font-size: 30px;
@@ -164,7 +164,6 @@
     }
 }
 
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
     .presentacionUnidades h2 {
         font-size: 36px;

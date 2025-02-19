@@ -33,7 +33,7 @@ const Ubicacion = () => {
                 </p>
             </div>
             <div className='owlComponenteCarrusel'>
-            <Swiper2 className="swiperUbicacion" />
+                <Swiper2 className="swiperUbicacion" />
             </div>
             <div className='serviciosCercanos'>
                 <h2 className='tituloSwiper'>Explora los Mejores Puntos de Interés</h2>

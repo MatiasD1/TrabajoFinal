@@ -37,9 +37,9 @@
 .fotoEnlaceContacto {
     opacity: 50%;
     display: block;
-    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-    height: 500px; /* Ajusta la altura según sea necesario */
-    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover; 
 }
 
 .textoEnlaceContacto {
@@ -47,12 +47,12 @@
     top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: $Encabezado; /* Cambia el color del texto si es necesario */
-    font-size: 4.3rem; /* Ajusta el tamaño del texto según sea necesario */
+    color: $Encabezado;
+    font-size: 4.3rem; 
     font-family: 'Urbanist', sans-serif;
     font-style: 500;
-    background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejorar la legibilidad */
-    padding: 0px 25px 18px 25px; /* Espaciado interno para el texto */
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 0px 25px 18px 25px;
     border: 2px solid $Encabezado;
     text-decoration: none;
     transition: 0.3s;
@@ -65,9 +65,8 @@
     cursor: pointer;
 }
 
-/* Media Queries para diseño responsive */
+/* Media Queries */
 
-/* Teléfono Móvil */
 @media (max-width: 767px) {
     .TituloEnlaceContacto {
         font-size: 24px;
@@ -90,7 +89,6 @@
     }
 }
 
-/* Tableta/Escritorio Pequeño */
 @media (min-width: 768px) and (max-width: 1199px) {
     .TituloEnlaceContacto {
         font-size: 32px;
@@ -113,7 +111,6 @@
     }
 }
 
-/* Escritorio/Laptop Grande */
 @media (min-width: 1200px) {
     .TituloEnlaceContacto {
         font-size: 46px;

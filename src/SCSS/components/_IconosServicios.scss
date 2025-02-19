@@ -1,6 +1,5 @@
 .iconosServicios {
     position: relative;
-    //background-color: black;
     overflow: hidden;
     padding-bottom: 20px;
 
@@ -11,7 +10,6 @@
         color: $Componentes;
         padding-top: 40px;
         padding-bottom: 10px;
-        /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
         z-index: 2;
         text-align: center;
         font-size: 2.4em;
@@ -23,7 +21,6 @@
         font-weight: 400;
         color: $TituloNegro;
         padding: 0px 20px 25px 20px;
-        /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
         z-index: 20;
         text-align: center;
         font-size: 1.2em;
@@ -46,7 +43,7 @@
 
     .iconos {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el número de columnas automáticamente */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 5px;
         color: $TextoNegro;
         font-family: 'Urbanist', sans-serif;
@@ -56,19 +53,19 @@
         text-align: center;
 
         @media (max-width: 389px) {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta a una columna o más según el ancho */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
             font-size: 0.7rem;
         }
         @media (min-width: 390px) and (max-width: 785px) {
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajusta a columnas según el ancho */
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
             font-size: 0.7rem;
         }
         @media (min-width: 786px) and (max-width: 1024px) {
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta a columnas según el ancho */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
             font-size: 1rem;
         }
         @media (min-width: 1025px) {
-            grid-template-columns: repeat(5, minmax(150px, 1fr)); /* Mantiene cinco columnas para pantallas grandes */
+            grid-template-columns: repeat(5, minmax(150px, 1fr)); 
             font-size: 1.2rem;
         }
     }
@@ -81,8 +78,8 @@
         z-index: 1;
 
         img {
-            width: 100%; /* Ajusta el tamaño de los íconos al contenedor */
-            max-width: 50px; /* Tamaño máximo para pantallas grandes */
+            width: 100%; 
+            max-width: 50px; 
             height: auto;
         }
 

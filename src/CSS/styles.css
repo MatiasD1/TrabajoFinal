@@ -1,17 +1,4 @@
 @charset "UTF-8";
-/*$color1: #fff1d8; //texto claro
-$color2: #f5deb3; //fondo
-$color3: #f7c686; //elementos importantes
-$color4: #d13630; //seccion importante
-
-$color5: #252525; //titulo texto oscuro
-$color6: #464646; //texto oscuro 
-*/
-/*Tamaños de las media queries
-@media (max-width: 767px) 
-@media (min-width: 768px) and (max-width: 1024px) 
-@media (min-width: 1025px) 
-*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 * {
   margin: 0;
@@ -64,14 +51,13 @@ $color6: #464646; //texto oscuro
   font-size: 36px;
   z-index: 99999 !important;
   text-align: center;
-  opacity: 0; /* Inicialmente oculto */
-  animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   font-family: "Urbanist", sans-serif;
   white-space: nowrap;
 }
 
-/* Definir la animación fadeIn */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -90,29 +76,29 @@ $color6: #464646; //texto oscuro
     margin: 10px;
   }
   .textoCarruselInicio {
-    top: 60%; /* Ajusta según sea necesario */
+    top: 60%;
     font-size: 18px;
   }
 }
-/* Tableta/Escritorio Pequeño */
+/* Tableta */
 @media (min-width: 768px) and (max-width: 1199px) {
   .flecha {
     width: 35px;
     margin: 15px;
   }
   .textoCarruselInicio {
-    top: 65%; /* Ajusta según sea necesario */
+    top: 65%;
     font-size: 40px;
   }
 }
-/* Escritorio/Laptop Grande */
+/* Escritorio */
 @media (min-width: 1200px) {
   .flecha {
     width: 40px;
     margin: 20px;
   }
   .textoCarruselInicio {
-    top: 70%; /* Ajusta según sea necesario */
+    top: 70%;
     font-size: 36px;
   }
 }
@@ -357,7 +343,7 @@ button[type=submit]:hover {
   height: auto;
   position: relative;
   z-index: 1;
-  background-color: #CBBD93; /* Asegúrate de reemplazar con el color correcto */
+  background-color: #CBBD93;
 }
 
 .presentacionUnidades {
@@ -377,7 +363,7 @@ button[type=submit]:hover {
 
 .containerUnidades {
   display: grid;
-  grid-template-columns: 1fr; /* Asegura que cada item ocupe toda la fila */
+  grid-template-columns: 1fr;
   gap: 20px;
   width: 100%;
 }
@@ -398,8 +384,8 @@ button[type=submit]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* O el valor que prefieras */
-  height: 250px; /* Asigna una altura fija para todas las imágenes */
+  width: 50%;
+  height: 250px;
   overflow: hidden;
   position: relative;
   background-color: black;
@@ -416,9 +402,9 @@ button[type=submit]:hover {
 }
 
 .fotoUnid {
-  width: 100%; /* Se asegura de que ocupe todo el ancho */
-  height: 100%; /* Se asegura de que ocupe toda la altura */
-  object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: 0.3s;
   background-color: black !important;
 }
@@ -436,13 +422,13 @@ button[type=submit]:hover {
 .textoUnidades {
   font-family: "Urbanist", sans-serif;
   color: #333333;
-  padding-top: 20px; /* Elimina padding para que se ajuste al contenedor */
+  padding-top: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Asegura que el contenido y el icono estén distribuidos */
+  justify-content: space-between;
   position: relative;
-  min-height: 200px; /* Ajusta la altura mínima para asegurar que el icono esté en la parte inferior */
+  min-height: 200px;
 }
 .textoUnidades h2 {
   color: #b60043;
@@ -451,11 +437,11 @@ button[type=submit]:hover {
   width: 30px;
   height: auto;
   display: block;
-  margin: auto; /* Centra el icono y añade espacio alrededor */
+  margin: auto;
   margin-bottom: 10px;
 }
 
-/* Móviles (hasta 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   .presentacionUnidades h2 {
     font-size: 24px;
@@ -480,7 +466,6 @@ button[type=submit]:hover {
     margin: 0px auto 10px;
   }
 }
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .presentacionUnidades h2 {
     font-size: 30px;
@@ -504,7 +489,6 @@ button[type=submit]:hover {
     flex-direction: row-reverse;
   }
 }
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
   .presentacionUnidades h2 {
     font-size: 36px;
@@ -535,7 +519,6 @@ button[type=submit]:hover {
     flex-direction: row-reverse;
   }
 }
-/* Estilos generales para el contenedor principal */
 .encabezado {
   position: relative;
   height: 400px;
@@ -546,7 +529,6 @@ button[type=submit]:hover {
   align-items: center;
 }
 
-/* Estilos para la imagen */
 .fotoEncabezado {
   position: absolute;
   top: 0;
@@ -558,7 +540,6 @@ button[type=submit]:hover {
   z-index: 2;
 }
 
-/* Estilos para el contenedor del título */
 .tituloEncabezado {
   position: relative;
   display: flex;
@@ -569,19 +550,17 @@ button[type=submit]:hover {
   z-index: 3;
 }
 
-/* Estilos para el título */
 .tituloEncabezado h1 {
   font-family: "Urbanist", sans-serif;
   font-weight: 400;
-  font-size: 70px; /* Tamaño de fuente predeterminado para escritorio */
+  font-size: 70px;
   color: #FFFFFF;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
   text-align: center;
 }
 
-/* Media Queries para diseño responsive */
-/* Móviles (hasta 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   .encabezado {
     height: 200px;
@@ -591,10 +570,9 @@ button[type=submit]:hover {
     border: 1px solid #FFFFFF;
   }
   .tituloEncabezado h1 {
-    font-size: 30px; /* Tamaño ajustado para pantallas pequeñas */
+    font-size: 30px;
   }
 }
-/* Tabletas y portátiles pequeños (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .encabezado {
     height: 300px;
@@ -604,10 +582,9 @@ button[type=submit]:hover {
     border: 2px solid #FFFFFF;
   }
   .tituloEncabezado h1 {
-    font-size: 50px; /* Tamaño ajustado para pantallas medianas */
+    font-size: 50px;
   }
 }
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
   .encabezado {
     height: 400px;
@@ -617,7 +594,7 @@ button[type=submit]:hover {
     border: 2px solid #FFFFFF;
   }
   .tituloEncabezado h1 {
-    font-size: 70px; /* Tamaño de fuente predeterminado para pantallas grandes */
+    font-size: 70px;
   }
 }
 .EnlaceContacto {
@@ -659,9 +636,9 @@ button[type=submit]:hover {
 .fotoEnlaceContacto {
   opacity: 50%;
   display: block;
-  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-  height: 500px; /* Ajusta la altura según sea necesario */
-  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 .textoEnlaceContacto {
@@ -669,12 +646,12 @@ button[type=submit]:hover {
   top: 72%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff; /* Cambia el color del texto si es necesario */
-  font-size: 4.3rem; /* Ajusta el tamaño del texto según sea necesario */
+  color: #ffffff;
+  font-size: 4.3rem;
   font-family: "Urbanist", sans-serif;
   font-style: 500;
-  background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejorar la legibilidad */
-  padding: 0px 25px 18px 25px; /* Espaciado interno para el texto */
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0px 25px 18px 25px;
   border: 2px solid #ffffff;
   text-decoration: none;
   transition: 0.3s;
@@ -687,8 +664,7 @@ button[type=submit]:hover {
   cursor: pointer;
 }
 
-/* Media Queries para diseño responsive */
-/* Teléfono Móvil */
+/* Media Queries */
 @media (max-width: 767px) {
   .TituloEnlaceContacto {
     font-size: 24px;
@@ -707,7 +683,6 @@ button[type=submit]:hover {
     top: 72%;
   }
 }
-/* Tableta/Escritorio Pequeño */
 @media (min-width: 768px) and (max-width: 1199px) {
   .TituloEnlaceContacto {
     font-size: 32px;
@@ -726,7 +701,6 @@ button[type=submit]:hover {
     top: 65%;
   }
 }
-/* Escritorio/Laptop Grande */
 @media (min-width: 1200px) {
   .TituloEnlaceContacto {
     font-size: 46px;
@@ -748,7 +722,7 @@ button[type=submit]:hover {
 footer {
   padding-top: 20px;
   width: 100%;
-  background-color: black;
+  background-color: #1f1308;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
@@ -792,8 +766,8 @@ footer {
 .logosRedes {
   display: flex;
   gap: 50px;
-  margin: 20px auto; /* Ajustar para que no cause desbordamiento */
-  max-width: 300px; /* Limitar el ancho máximo para evitar desbordamiento */
+  margin: 20px auto;
+  max-width: 300px;
 }
 
 .logoRed img {
@@ -822,75 +796,72 @@ footer {
   font-weight: 300;
 }
 
-/* Estilos responsivos */
-/* Móviles (hasta 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   footer {
-    height: auto; /* Ajustar para contenido dinámico */
+    height: auto;
     padding-top: 20px;
-    grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas más pequeñas */
-    text-align: center; /* Centrar contenido */
+    grid-template-columns: 1fr;
+    text-align: center;
     margin: 0;
   }
   .accesoNav {
     display: none;
   }
   .columnaFooter h3, .columnaFooter p {
-    display: none; /* Ocultar títulos y párrafos en pantallas pequeñas */
+    display: none;
   }
   .logosRedes {
     display: flex;
-    flex-wrap: wrap; /* Permite que los íconos se envuelvan si no hay suficiente espacio */
-    justify-content: center; /* Centra los íconos horizontalmente */
-    margin: 0px auto; /* Ajustar margen */
-    gap: 20px; /* Espacio entre los íconos */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
+    gap: 20px;
   }
   .logoRed img {
-    width: 40px; /* Ajustar tamaño de los íconos */
-    height: 40px; /* Ajustar tamaño de los íconos */
-    margin: 0; /* Eliminar márgenes adicionales */
+    width: 40px;
+    height: 40px;
+    margin: 0;
     padding: 0px;
   }
 }
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   footer {
     padding-top: 20px;
   }
   .columnaFooter h3 {
-    font-size: 20px; /* Tamaño reducido para pantallas medianas */
+    font-size: 20px;
   }
   .columnaFooter p {
-    font-size: 12px; /* Tamaño reducido para pantallas medianas */
-    max-width: 200px; /* Ampliar ancho máximo para pantallas medianas */
+    font-size: 12px;
+    max-width: 200px;
   }
   .logosRedes {
-    max-width: 250px; /* Ajustar ancho máximo en pantallas medianas */
+    max-width: 250px;
   }
   .logoRed img {
-    width: 45px; /* Ajustar tamaño de los íconos */
-    height: 45px; /* Ajustar tamaño de los íconos */
+    width: 45px;
+    height: 45px;
   }
 }
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
   footer {
     padding-top: 20px;
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas en pantallas grandes */
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .columnaFooter h3 {
-    font-size: 25px; /* Tamaño normal para pantallas grandes */
+    font-size: 25px;
   }
   .columnaFooter p {
-    font-size: 14px; /* Tamaño normal para pantallas grandes */
-    max-width: 150px; /* Ancho máximo normal para pantallas grandes */
+    font-size: 14px;
+    max-width: 150px;
   }
   .logosRedes {
-    max-width: 300px; /* Ancho máximo normal en pantallas grandes */
+    max-width: 300px;
   }
   .logoRed img {
-    width: 50px; /* Tamaño normal de los íconos */
-    height: 50px; /* Tamaño normal de los íconos */
+    width: 50px;
+    height: 50px;
   }
 }
 .frase {
@@ -919,14 +890,12 @@ footer {
   z-index: 1500;
 }
 
-/* Establece las propiedades para los contenedores de las diapositivas */
 .galeria-slides {
   display: flex;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
 }
 
-/* Establece las propiedades para las imágenes dentro de las diapositivas */
 .galeria-slide img {
   width: 100%;
   height: auto;
@@ -934,7 +903,6 @@ footer {
   object-fit: cover;
 }
 
-/* Establece las propiedades para el botón de diapositiva anterior y siguiente */
 .prev-btn, .next-btn {
   position: absolute;
   top: 50%;
@@ -955,7 +923,6 @@ footer {
   right: 0;
 }
 
-/* Establece las propiedades para los puntos de navegación entre las diapositivas */
 .galeria-dots {
   display: flex;
   justify-content: center;
@@ -985,54 +952,51 @@ footer {
   background-color: #b60043;
 }
 
-/* Estilos responsivos */
-/* Móviles (hasta 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   .galeria-content {
     margin-top: 20px;
-    max-width: 95%; /* Aumentado a 95% para llenar más la pantalla en móviles */
-    max-height: 95%; /* Aumentado a 95% para ocupar más espacio vertical */
+    max-width: 95%;
+    max-height: 95%;
   }
   .galeria-slide img {
-    max-height: calc(70vh - 120px); /* Ajusta la altura de la imagen con el padding */
-    width: auto; /* Ajusta la imagen para que se adapte al contenedor */
+    max-height: calc(70vh - 120px);
+    width: auto;
     height: 100%;
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+    object-fit: contain;
   }
   .prev-btn, .next-btn {
-    font-size: 24px; /* Ajuste del tamaño de los botones para mejor visibilidad */
+    font-size: 24px;
     padding: 15px;
   }
 }
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .galeria-content {
-    max-width: 90%; /* Aumentado a 90% para tabletas */
-    max-height: 90%; /* Aumentado a 90% para tabletas */
+    max-width: 90%;
+    max-height: 90%;
     margin-top: 30px;
   }
   .galeria-slide img {
-    max-height: calc(75vh - 20px); /* Ajusta la altura de la imagen con el padding */
-    width: auto; /* Ajusta la imagen para que se adapte al contenedor */
+    max-height: calc(75vh - 20px);
+    width: auto;
     height: 100%;
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+    object-fit: contain;
   }
   .prev-btn, .next-btn {
-    font-size: 24px; /* Ajuste del tamaño de los botones para mejor visibilidad */
+    font-size: 24px;
     padding: 18px;
   }
 }
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
   .galeria-content {
-    max-width: 90%; /* Ancho máximo del 90% para escritorio */
-    max-height: 90%; /* Altura máxima del 90% para escritorio */
+    max-width: 90%;
+    max-height: 90%;
   }
   .galeria-slide img {
-    max-height: 90vh; /* Ajusta la altura máxima de la imagen para escritorio */
+    max-height: 90vh;
   }
   .prev-btn, .next-btn {
-    font-size: 24px; /* Tamaño de los botones para pantallas grandes */
+    font-size: 24px;
     padding: 20px;
   }
 }
@@ -1049,14 +1013,12 @@ footer {
   font-family: "Urbanist", sans-serif;
 }
 
-/* Estilos generales para el grid */
 .grid-row {
   display: grid;
   gap: 10px;
-  margin-bottom: 0; /* Elimina margen inferior si es necesario */
+  margin-bottom: 0;
 }
 
-/* Ajuste para imágenes y overlays */
 .fotosDeptosInicio {
   position: relative;
   overflow: hidden;
@@ -1094,7 +1056,6 @@ footer {
   opacity: 1;
 }
 
-/* Estilos para el overlay y el contenedor del carrusel */
 .overlay {
   position: fixed;
   top: 0;
@@ -1120,49 +1081,47 @@ footer {
   overflow: auto;
 }
 
-/* Móviles (hasta 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   .grid-row {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles para mejor visibilidad */
+    grid-template-columns: repeat(2, 1fr);
   }
   .tituloGaleriaInicio {
     font-size: 34px;
   }
   .fotosDeptosInicio {
-    height: 150px; /* Ajustado para pantallas pequeñas */
+    height: 150px;
   }
   .fotoSimboloInicio {
-    width: 30%; /* Aumentado para pantallas pequeñas */
+    width: 30%;
   }
 }
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .grid-row {
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas en tabletas para mejor distribución */
+    grid-template-columns: repeat(3, 1fr);
   }
   .tituloGaleriaInicio {
     font-size: 38px;
   }
   .fotosDeptosInicio {
-    height: 200px; /* Ajustado para tabletas */
+    height: 200px;
   }
   .fotoSimboloInicio {
-    width: 25%; /* Ajustado para tabletas */
+    width: 25%;
   }
 }
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
   .grid-row {
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en escritorios */
+    grid-template-columns: repeat(4, 1fr);
   }
   .tituloGaleriaInicio {
     font-size: 38px;
   }
   .fotosDeptosInicio {
-    height: 270px; /* Altura ajustada para escritorios */
+    height: 270px;
   }
   .fotoSimboloInicio {
-    width: 20%; /* Ajustado para escritorios */
+    width: 20%;
   }
 }
 .iconosServicios {
@@ -1177,7 +1136,6 @@ footer {
   color: #b60043;
   padding-top: 40px;
   padding-bottom: 10px;
-  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
   z-index: 2;
   text-align: center;
   font-size: 2.4em;
@@ -1188,7 +1146,6 @@ footer {
   font-weight: 400;
   color: black;
   padding: 0px 20px 25px 20px;
-  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
   z-index: 20;
   text-align: center;
   font-size: 1.2em;
@@ -1209,7 +1166,7 @@ footer {
 }
 .iconosServicios .iconos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el número de columnas automáticamente */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 5px;
   color: #333333;
   font-family: "Urbanist", sans-serif;
@@ -1220,25 +1177,25 @@ footer {
 }
 @media (max-width: 389px) {
   .iconosServicios .iconos {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta a una columna o más según el ancho */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     font-size: 0.7rem;
   }
 }
 @media (min-width: 390px) and (max-width: 785px) {
   .iconosServicios .iconos {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajusta a columnas según el ancho */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     font-size: 0.7rem;
   }
 }
 @media (min-width: 786px) and (max-width: 1024px) {
   .iconosServicios .iconos {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta a columnas según el ancho */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     font-size: 1rem;
   }
 }
 @media (min-width: 1025px) {
   .iconosServicios .iconos {
-    grid-template-columns: repeat(5, minmax(150px, 1fr)); /* Mantiene cinco columnas para pantallas grandes */
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
     font-size: 1.2rem;
   }
 }
@@ -1250,8 +1207,8 @@ footer {
   z-index: 1;
 }
 .iconosServicios .icono img {
-  width: 100%; /* Ajusta el tamaño de los íconos al contenedor */
-  max-width: 50px; /* Tamaño máximo para pantallas grandes */
+  width: 100%;
+  max-width: 50px;
   height: auto;
 }
 .iconosServicios .icono:hover {
@@ -1264,7 +1221,7 @@ footer {
 }
 
 .presentacionInicio {
-  padding: 20px; /* Espaciado general */
+  padding: 20px;
   text-align: center;
 }
 .presentacionInicio .tituloInicio {
@@ -1282,57 +1239,50 @@ footer {
   padding: 0px 20px 0px 20px;
 }
 
-/* Móviles (hasta 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   .presentacionInicio {
-    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    padding: 10px;
   }
   .presentacionInicio .tituloInicio {
-    font-size: 2rem; /* Disminuye el tamaño del título */
+    font-size: 2rem;
   }
   .presentacionInicio .textoInicio {
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    font-size: 1rem;
     line-height: 1.4;
   }
 }
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .presentacionInicio {
-    padding: 15px; /* Ajusta el padding para tabletas */
+    padding: 15px;
   }
   .presentacionInicio .tituloInicio {
-    font-size: 2.3rem; /* Tamaño del título ligeramente más pequeño */
+    font-size: 2.3rem;
   }
   .presentacionInicio .textoInicio {
-    font-size: 1.1rem; /* Ajusta el tamaño del texto */
+    font-size: 1.1rem;
     line-height: 1.5;
   }
 }
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
   .presentacionInicio {
-    padding: 30px; /* Mayor padding para pantallas grandes */
+    padding: 30px;
   }
   .presentacionInicio .tituloInicio {
-    font-size: 3rem; /* Aumenta el tamaño del título */
+    font-size: 3rem;
   }
   .presentacionInicio .textoInicio {
-    font-size: 1.3rem; /* Tamaño más grande para el texto */
+    font-size: 1.3rem;
     line-height: 1.7;
   }
 }
 .Mapa {
-  /*display: flex;
-  justify-content: center;
-  Esto se maneja desde el contenedor en Ubicacion
-  */
   padding-top: 50px;
   height: 500px;
   width: 70%;
   background-color: #b60043;
 }
 
-/* Estilos para el botón de hamburguesa */
 .hamburger {
   display: none;
   font-size: 30px;
@@ -1346,25 +1296,23 @@ footer {
   z-index: 1200;
 }
 
-/* Estilos para el enlace de contacto */
 .contacto-link {
   background-color: #b60043;
-  color: white; /* Asegura que el texto sea visible sobre el fondo */
+  color: white;
   border-radius: 5px;
   margin-top: 1.5rem !important;
   padding: 10px 10px !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid transparent; /* Borde inferior inicial transparente */
-  transition: background-color 0.3s ease !important; /* Incluye border-bottom-color en la transición */
+  border-bottom: 2px solid transparent;
+  transition: background-color 0.3s ease !important;
 }
 
 .contacto-link:hover {
   background-color: #d1004d;
-  color: white !important; /* Cambia el color del texto al hacer hover */
+  color: white !important;
 }
 
-/* Media queries para la responsividad */
-/* Móviles (hasta 849px) */
+/* Media queries */
 @media (max-width: 849px) {
   .hamburger {
     display: block;
@@ -1375,7 +1323,7 @@ footer {
     width: 100%;
     background-color: rgb(0, 0, 0) !important;
     position: absolute;
-    top: 140px; /* Ajustado para que los links aparezcan más abajo del título */
+    top: 140px;
     left: 0;
     z-index: 1000;
   }
@@ -1390,7 +1338,7 @@ footer {
   }
   .NavBar {
     flex-direction: column;
-    align-items: flex-start; /* Alinea los elementos en la parte superior izquierda */
+    align-items: flex-start;
     padding: 42px 0;
     width: 100%;
     background-color: black;
@@ -1399,13 +1347,13 @@ footer {
     position: static;
     text-align: left;
     margin: 10px;
-    word-wrap: break-word; /* Permite que el texto se ajuste a pantallas pequeñas */
+    word-wrap: break-word;
   }
   .NavBar h2 {
-    font-size: 18px; /* Tamaño más pequeño para pantallas pequeñas */
+    font-size: 18px;
   }
   .NavBar h3 {
-    font-size: 14px; /* Tamaño más pequeño para pantallas pequeñas */
+    font-size: 14px;
   }
   .nav-link {
     padding: 10px 0;
@@ -1418,10 +1366,9 @@ footer {
     transition: color 0.3s ease;
   }
 }
-/* Tabletas (850px a 1200px) */
 @media (min-width: 850px) and (max-width: 1200px) {
   .hamburger {
-    display: none; /* Ocultar el botón de hamburguesa en tabletas */
+    display: none;
   }
   .nav {
     display: flex;
@@ -1447,7 +1394,7 @@ footer {
     position: static;
     text-align: center;
     margin: 0;
-    font-size: 20px; /* Tamaño ajustado para tabletas */
+    font-size: 20px;
   }
   .NavBar h2 {
     font-size: 22px;
@@ -1457,17 +1404,16 @@ footer {
   }
   .nav-link {
     padding: 15px;
-    font-size: 18px; /* Ajuste para tamaño de fuente en tabletas */
+    font-size: 18px;
   }
   .nav-link:hover {
     color: #D9BE6C;
     transition: color 0.3s ease;
   }
 }
-/* Escritorio (1201px y superior) */
 @media (min-width: 1201px) {
   .hamburger {
-    display: none; /* Ocultar el botón de hamburguesa en escritorios */
+    display: none;
   }
   .nav {
     display: flex;
@@ -1493,7 +1439,7 @@ footer {
     position: static;
     text-align: center;
     margin: 0;
-    font-size: 24px; /* Tamaño ajustado para pantallas grandes */
+    font-size: 24px;
   }
   .NavBar h2 {
     font-size: 24px;
@@ -1503,14 +1449,13 @@ footer {
   }
   .nav-link {
     padding: 17px 20px;
-    font-size: 20px; /* Tamaño de fuente ajustado para escritorios */
+    font-size: 20px;
   }
   .nav-link:hover {
     color: #b60043;
     transition: color 0.5s ease;
   }
 }
-/* Estilos para el enlace de navegación */
 .nav-link {
   color: #ffffff;
   margin-top: 1rem;
@@ -1532,17 +1477,17 @@ footer {
   width: 100%;
   z-index: 1000;
   padding-right: 30px;
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  box-sizing: border-box;
 }
 
 .NavBar {
   display: flex;
-  align-items: flex-start; /* Alinea los elementos en la esquina superior izquierda */
-  width: 100%; /* Asegura que ocupe el 100% del ancho */
-  position: relative; /* Para que los elementos se posicionen relativamente dentro del navbar */
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
 }
 .NavBar h2 {
-  font-size: 24px; /* Tamaño ajustado para pantallas grandes */
+  font-size: 24px;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -1556,7 +1501,7 @@ footer {
   position: absolute;
   top: 50px;
   left: 20px;
-  font-size: 16px; /* Tamaño ajustado para pantallas grandes */
+  font-size: 16px;
   font-family: "Urbanist", sans-serif;
   font-weight: 400;
   color: #b60043;
@@ -1584,7 +1529,6 @@ footer {
   display: none;
 }
 
-/* Asegúrate de que el body y el html ocupen el 100% del ancho */
 html, body {
   width: 100%;
   margin: 0;
@@ -1594,104 +1538,101 @@ html, body {
 
 .OtrosServicios {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-  grid-template-rows: auto auto; /* Dos filas ajustadas al contenido */
-  gap: 20px; /* Espacio entre los elementos (ajusta según sea necesario) */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .item1 {
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  grid-column: 1/3; /* Ocupa dos columnas en la primera fila */
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/3;
 }
 
 .item2 {
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  grid-column: 1/3; /* Ocupa dos columnas en la segunda fila */
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/3;
 }
 
 .textoOtrosServicios .iconoOtrosServicios {
   width: 10% !important;
   height: auto !important;
   display: block;
-  margin: 0 auto; /* Centra el icono horizontalmente */
+  margin: 0 auto;
 }
 .textoOtrosServicios h3 {
   color: #b60043;
-  text-align: center; /* Centra el texto */
+  text-align: center;
 }
 .textoOtrosServicios p {
   color: #333333;
   padding: 20px;
-  text-align: center; /* Centra el texto */
+  text-align: center;
 }
 
-/* Ajusta el estilo del swiper si es necesario */
 .swiper {
-  width: 100%; /* Asegúrate de que el swiper ocupe el ancho completo */
+  width: 100%;
 }
 
-/* Móviles (hasta 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   .OtrosServicios {
-    grid-template-columns: 1fr; /* Una columna en móviles */
-    grid-template-rows: auto auto; /* Dos filas ajustadas al contenido */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
   .item1, .item2 {
-    flex-direction: column; /* Coloca el swiper y el texto en fila */
-    align-items: center; /* Centra el contenido en la columna */
-    justify-content: center; /* Centra el contenido en la columna */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .OtrosServicios {
-    grid-template-columns: 1fr 1fr; /* Dos columnas en tabletas */
-    grid-template-rows: auto auto; /* Dos filas ajustadas al contenido */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
   }
   .item1, .item2 {
-    flex-direction: column; /* Coloca el swiper y el texto en fila */
-    align-items: center; /* Centra el contenido en la columna */
-    justify-content: center; /* Centra el contenido en la columna */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .textoOtrosServicios {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido */
-    justify-content: center; /* Centra el contenido */
+    align-items: center;
+    justify-content: center;
   }
   .tituloOtrosServicios {
-    width: auto; /* Ajusta el ancho del texto */
+    width: auto;
   }
 }
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
   .OtrosServicios {
-    grid-template-columns: 1fr 1fr; /* Dos columnas en escritorios */
-    grid-template-rows: auto auto; /* Dos filas ajustadas al contenido */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
   }
   .item1 {
-    flex-direction: row; /* Coloca el swiper y el texto en fila */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .item2 {
-    flex-direction: row-reverse; /* Coloca el texto y el swiper en fila */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
   }
 }
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Opacidad inicial */
+    opacity: 0;
   }
   to {
-    opacity: 1; /* Opacidad final */
+    opacity: 1;
   }
 }
 .textAnimation1 {
@@ -1707,9 +1648,9 @@ html, body {
   font-weight: 500;
   font-size: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  white-space: nowrap; /* Previene el salto de línea */
-  opacity: 0; /* Comienza con opacidad 0 para el efecto de fade in */
-  animation: fadeIn 1s ease forwards; /* Animación de fade in */
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
 
 .textAnimation1 p {
@@ -1726,7 +1667,7 @@ html, body {
   color: #fcd07f;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   left: 295px;
-  white-space: pre; /* Mantiene los espacios en blanco tal como están */
+  white-space: pre;
 }
 
 .word.active {
@@ -1767,11 +1708,11 @@ html, body {
 }
 
 .ubicacion {
-  min-height: calc(100vh - 200px); /* Calcula la altura mínima de la ubicación para que el footer quede al final de la página para solucionar el problema de que el footer quedaba en el medio */
+  min-height: calc(100vh - 200px);
   width: 100%;
   background-color: #CBBD93;
   display: flex;
-  flex-direction: column; /* Asegura que los elementos internos se apilen verticalmente */
+  flex-direction: column;
 }
 
 .carruselUbicacion {
@@ -1795,7 +1736,7 @@ html, body {
 }
 @media (min-width: 768px) {
   .presentacionUbicacion {
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales en pantallas medianas y grandes */
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "tituloUbicacion fraseUbicacion" "textoUbicacion textoUbicacion";
     padding: 10px 40px;
     gap: 20px;
@@ -1913,9 +1854,9 @@ html, body {
 }
 
 .bordeSwiper2 {
-  padding: 20px; /* Espacio entre el borde y el contenido del carrusel */
-  margin: auto; /* Ajusta según sea necesario */
-  max-width: 1200px; /* Ajusta según sea necesario para incluir padding y tamaño del carrusel */
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
   position: relative;
 }
 
@@ -1979,22 +1920,20 @@ html, body {
   transition: opacity 0.15s ease;
 }
 
-/* Responsive Styles */
-/* Para pantallas pequeñas (max-width: 767px) */
+/* Media Queries */
 @media (max-width: 767px) {
   .swiper-container2 {
     max-width: 100%;
-    padding: 5px; /* Reducir el padding */
+    padding: 5px;
   }
   .swiper-container2 .slide-image {
-    height: 250px; /* Reducir la altura de las imágenes */
+    height: 250px;
   }
   .swiper-container2 .swiper-button-custom {
     width: 30px;
     height: 30px;
   }
 }
-/* Para pantallas medianas (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .swiper-container2 {
     max-width: 600px;
@@ -2008,7 +1947,6 @@ html, body {
     height: 35px;
   }
 }
-/* Para pantallas grandes (min-width: 1025px) */
 @media (min-width: 1025px) {
   .swiper-container2 {
     max-width: 1000px !important;
@@ -2074,6 +2012,7 @@ html, body {
   opacity: 1;
 }
 
+/* Media Queries */
 @media (max-width: 767px) {
   .swiper-container {
     width: 90%;
@@ -2110,6 +2049,7 @@ html, body {
 .personalizar {
   margin-top: 100px;
   text-align: center;
+  /* Media Queries */
 }
 .personalizar h2 {
   padding-bottom: 20px;
@@ -2118,32 +2058,63 @@ html, body {
 }
 .personalizar .fila {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
+.personalizar .fila .tituloFila {
+  font-size: 22px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.personalizar .fila .imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
 .personalizar .fila img {
-  width: 400px;
-  height: auto;
+  flex-basis: 30%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
   cursor: pointer;
   border-radius: 5px;
   transition: transform 0.2s ease-in-out;
 }
 .personalizar .seleccionada {
-  border: 3px solid #ff0000;
+  border: 3px solid #1f1308;
 }
 .personalizar .botonGuardar {
   background-color: #b60043;
-  color: white; /* Asegura que el texto sea visible sobre el fondo */
+  color: white;
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 10px 10px !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease !important; /* Incluye border-bottom-color en la transición */
+  transition: background-color 0.3s ease !important;
 }
 .personalizar .botonGuardar:hover {
   background-color: #d1004d;
-  color: white !important; /* Cambia el color del texto al hacer hover */
+  color: white !important;
+}
+@media (max-width: 767px) {
+  .personalizar .imagenes {
+    flex-wrap: wrap;
+  }
+  .personalizar img {
+    flex-basis: 45%;
+    max-width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .personalizar .imagenes {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

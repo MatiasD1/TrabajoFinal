@@ -40,14 +40,13 @@
     font-size: 36px; 
     z-index: 99999 !important; 
     text-align: center; 
-    opacity: 0; /* Inicialmente oculto */
-    animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
     font-family: "Urbanist", sans-serif;
     white-space: nowrap;
 }
 
-/* Definir la animación fadeIn */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -71,12 +70,12 @@
     }
 
     .textoCarruselInicio {
-        top: 60%; /* Ajusta según sea necesario */
+        top: 60%;
         font-size: 18px;
     }
 }
 
-/* Tableta/Escritorio Pequeño */
+/* Tableta */
 @media (min-width: 768px) and (max-width: 1199px) {
     .flecha {
         width: 35px;
@@ -84,12 +83,12 @@
     }
 
     .textoCarruselInicio {
-        top: 65%; /* Ajusta según sea necesario */
+        top: 65%; 
         font-size: 40px;
     }
 }
 
-/* Escritorio/Laptop Grande */
+/* Escritorio */
 @media (min-width: 1200px) {
     .flecha {
         width: 40px;
@@ -97,7 +96,7 @@
     }
 
     .textoCarruselInicio {
-        top: 70%; /* Ajusta según sea necesario */
+        top: 70%;
         font-size: 36px;
     }
 }

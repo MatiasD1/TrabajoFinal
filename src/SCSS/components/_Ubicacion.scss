@@ -1,9 +1,9 @@
 .ubicacion {
-    min-height: calc(100vh - 200px); /* Calcula la altura mínima de la ubicación para que el footer quede al final de la página para solucionar el problema de que el footer quedaba en el medio */
+    min-height: calc(100vh - 200px); 
     width: 100%;
     background-color: $Fondo;
     display: flex;
-    flex-direction: column; /* Asegura que los elementos internos se apilen verticalmente */
+    flex-direction: column; 
 }
 
 .carruselUbicacion {
@@ -27,7 +27,7 @@
     font-family: 'Urbanist', sans-serif;
     
     @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr; /* Dos columnas iguales en pantallas medianas y grandes */
+        grid-template-columns: 1fr 1fr; 
         grid-template-areas:
             "tituloUbicacion fraseUbicacion"
             "textoUbicacion textoUbicacion";
@@ -64,7 +64,7 @@
         font-weight: 500;
         font-size: 2rem;
         padding-top: 20px;
-        //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
     }
 }
 .mapaUbicacion{
@@ -72,7 +72,6 @@
     padding: 20px;
     color: $Componentes;
     background-color: $Fondo;
-    //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     
     img{
         padding: 20px;

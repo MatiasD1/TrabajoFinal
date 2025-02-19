@@ -2,10 +2,10 @@
 
 @keyframes fadeIn {
     from {
-      opacity: 0; /* Opacidad inicial */
+      opacity: 0; 
     }
     to {
-      opacity: 1; /* Opacidad final */
+      opacity: 1; 
     }
   }
 
@@ -22,9 +22,9 @@
     font-weight: 500;
     font-size: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    white-space: nowrap; /* Previene el salto de línea */
-    opacity: 0; /* Comienza con opacidad 0 para el efecto de fade in */
-    animation: fadeIn 1s ease forwards; /* Animación de fade in */
+    white-space: nowrap; 
+    opacity: 0; 
+    animation: fadeIn 1s ease forwards; 
 }
 
 .textAnimation1 p {
@@ -41,7 +41,7 @@
     color: #fcd07f;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     left: 295px;
-    white-space: pre; /* Mantiene los espacios en blanco tal como están */
+    white-space: pre;
 }
 
 .word.active {

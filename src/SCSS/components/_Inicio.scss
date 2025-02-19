@@ -19,7 +19,8 @@
     }
 }
 
-/* Móviles (hasta 767px) */
+/* Media Queries */
+
 @media (max-width: 767px) {
     .presentacionInicio {
         padding: 10px; 
@@ -35,7 +36,6 @@
     }
 }
 
-/* Tabletas (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .presentacionInicio {
         padding: 15px; 
@@ -51,7 +51,6 @@
     }
 }
 
-/* Escritorio (1025px y superior) */
 @media (min-width: 1025px) {
     .presentacionInicio {
         padding: 30px; 

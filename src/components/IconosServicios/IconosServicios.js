@@ -16,15 +16,13 @@ import secador from '../../img/icons/secador1.png'
 
 function IconosServicios() {
     return (
-       <div className='iconosServicios'>
+        <div className='iconosServicios'>
         <h1>Lo que ofrecemos en cada habitación</h1>
             <p className='textoIconosServicios'>Te brindamos mucho de lo que podes necesitar para <br/>
                 que tu ocupación esencial sea disfrutar cada día. 
             </p>
             <div className='iconosContenedor'>        
-               {/* <img src={arena} className="serviciosFondo" alt="orilla del mar"/> COLOR DE FONDO EN SCSS*/}
                 <div className='iconos'>
-
                     <div className='icono'>
                         <img src={InfoTuristica} alt="Icono InfoTuristica"/>
                         <p>Información<br/> turística</p>
@@ -37,7 +35,6 @@ function IconosServicios() {
                         <img src={wifi} alt="Icono wifi"/>
                         <p>Wi-fi</p>
                     </div>
-
                     <div className='icono'>
                         <img src={alarma} alt="Icono alarma"/>
                         <p>Sistema de<br/> Seguridad</p>
@@ -50,7 +47,6 @@ function IconosServicios() {
                         <img src={baulera} alt="Icono baulera"/>
                         <p>Baulera</p>
                     </div>
-
                     <div className='icono'>
                         <img src={secador} alt="Icono secador"/>
                         <p>Secador</p>
@@ -63,7 +59,6 @@ function IconosServicios() {
                         <img src={TV} alt="Icono TV"/>
                         <p>TV</p>
                     </div>
-
                     <div className='icono'>
                         <img src={vajillaUtensillos} alt="Icono vajillaUtensillos"/>
                         <p>Vajilla y<br/> Utensilios</p>
@@ -76,7 +71,6 @@ function IconosServicios() {
                         <img src={sommier} alt="Icono sommier"/>
                         <p>Sommier</p>
                     </div>
-
                     <div className='icono'>
                         <img src={toallas} alt="Icono toallas"/>
                         <p>Toallas</p>
@@ -90,10 +84,9 @@ function IconosServicios() {
                         <p>Botiquín</p>
                     </div>
                     
-
                 </div>
             </div>
-       </div>
+        </div>
     );
 }
 

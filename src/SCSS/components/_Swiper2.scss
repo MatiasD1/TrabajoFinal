@@ -1,22 +1,21 @@
-//CARRUSEL DE BARRIO #UBICACION
 .bordeSwiper2 {
-  padding: 20px; /* Espacio entre el borde y el contenido del carrusel */
-  margin: auto; /* Ajusta según sea necesario */
-  max-width: 1200px; /* Ajusta según sea necesario para incluir padding y tamaño del carrusel */
+  padding: 20px; 
+  margin: auto; 
+  max-width: 1200px; 
   position: relative;
 }
 
 .swiper-container2 {
   max-width: 900px;
   margin: auto;
-  position: relative; // Para posicionar las flechas de navegación
+  position: relative; 
   border: solid 2px white;
   padding: 10px;
 
   .slide-image {
     width: 100%;
     height: 600px;
-    object-fit: cover; // Asegura que la imagen ocupe todo el espacio del contenedor
+    object-fit: cover; 
   }
 
   .swiper-button-custom {
@@ -71,15 +70,14 @@
   transition: opacity 0.15s ease;
 }
 
-/* Responsive Styles */
+/* Media Queries */
 
-/* Para pantallas pequeñas (max-width: 767px) */
 @media (max-width: 767px) {
   .swiper-container2 {
     max-width: 100%;
-    padding: 5px; /* Reducir el padding */
+    padding: 5px; 
     .slide-image {
-      height: 250px; /* Reducir la altura de las imágenes */
+      height: 250px;
     }
     .swiper-button-custom {
       width: 30px;
@@ -88,7 +86,6 @@
   }
 }
 
-/* Para pantallas medianas (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .swiper-container2 {
     max-width: 600px;
@@ -103,7 +100,6 @@
   }
 }
 
-/* Para pantallas grandes (min-width: 1025px) */
 @media (min-width: 1025px) {
   .swiper-container2 {
     max-width: 1000px !important;

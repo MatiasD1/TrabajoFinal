@@ -1,4 +1,3 @@
-/* Estilos para el botón de hamburguesa */
 .hamburger {
     display: none;
     font-size: 30px;
@@ -12,28 +11,26 @@
     z-index: 1200;
 }
 
-/* Estilos para el enlace de contacto */
 .contacto-link {
     background-color: $Componentes;
-    color: white; /* Asegura que el texto sea visible sobre el fondo */
+    color: white; 
     border-radius: 5px;
     margin-top: 1.5rem !important;
     padding: 10px 10px !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid transparent; /* Borde inferior inicial transparente */
-    transition: background-color 0.3s ease !important; /* Incluye border-bottom-color en la transición */
+    border-bottom: 2px solid transparent; 
+    transition: background-color 0.3s ease !important; 
 }
 
 .contacto-link:hover {
     background-color: #d1004d;
-    color: white !important; /* Cambia el color del texto al hacer hover */
+    color: white !important; 
 }
 
 
 
-/* Media queries para la responsividad */
+/* Media queries */
 
-/* Móviles (hasta 849px) */
 @media (max-width: 849px) {
     .hamburger {
         display: block;
@@ -45,7 +42,7 @@
         width: 100%;
         background-color: rgba(0, 0, 0) !important;
         position: absolute;
-        top: 140px; /* Ajustado para que los links aparezcan más abajo del título */
+        top: 140px; 
         left: 0;
         z-index: 1000;
     }
@@ -63,7 +60,7 @@
 
     .NavBar {
         flex-direction: column;
-        align-items: flex-start; /* Alinea los elementos en la parte superior izquierda */
+        align-items: flex-start; 
         padding: 42px 0;
         width: 100%;
         background-color: black;
@@ -73,15 +70,15 @@
         position: static;
         text-align: left;
         margin: 10px;
-        word-wrap: break-word; /* Permite que el texto se ajuste a pantallas pequeñas */
+        word-wrap: break-word; 
     }
 
     .NavBar h2 {
-        font-size: 18px; /* Tamaño más pequeño para pantallas pequeñas */
+        font-size: 18px; 
     }
 
     .NavBar h3 {
-        font-size: 14px; /* Tamaño más pequeño para pantallas pequeñas */
+        font-size: 14px; 
     }
 
     .nav-link {
@@ -97,10 +94,9 @@
     }
 }
 
-/* Tabletas (850px a 1200px) */
 @media (min-width: 850px) and (max-width: 1200px) {
     .hamburger {
-        display: none; /* Ocultar el botón de hamburguesa en tabletas */
+        display: none; 
     }
 
     .nav {
@@ -130,7 +126,7 @@
         position: static;
         text-align: center;
         margin: 0;
-        font-size: 20px; /* Tamaño ajustado para tabletas */
+        font-size: 20px; 
     }
 
     .NavBar h2 {
@@ -143,7 +139,7 @@
 
     .nav-link {
         padding: 15px;
-        font-size: 18px; /* Ajuste para tamaño de fuente en tabletas */
+        font-size: 18px; 
     }
 
     .nav-link:hover {
@@ -152,10 +148,9 @@
     }
 }
 
-/* Escritorio (1201px y superior) */
 @media (min-width: 1201px) {
     .hamburger {
-        display: none; /* Ocultar el botón de hamburguesa en escritorios */
+        display: none; 
     }
 
     .nav {
@@ -185,7 +180,7 @@
         position: static;
         text-align: center;
         margin: 0;
-        font-size: 24px; /* Tamaño ajustado para pantallas grandes */
+        font-size: 24px; 
     }
 
     .NavBar h2 {
@@ -198,7 +193,7 @@
 
     .nav-link {
         padding: 17px 20px;
-        font-size: 20px; /* Tamaño de fuente ajustado para escritorios */
+        font-size: 20px; 
     }
 
     .nav-link:hover {
@@ -207,7 +202,6 @@
     }
 }
 
-/* Estilos para el enlace de navegación */
 .nav-link {
     color: $Encabezado;
     margin-top: 1rem;
@@ -219,8 +213,6 @@
 
     &:hover {
         color: $color7;
-        //border-bottom-color: rgb(255, 255, 255);
-        //transition: color 0.5s ease, border-bottom-color 0.5s ease;
         transition: color 0.5s ease;
         text-shadow: 2px 2px 4px rgba(245, 240, 240, 0.26);
     }
@@ -232,17 +224,17 @@
     width: 100%;
     z-index: 1000;
     padding-right: 30px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box; 
 }
 
 .NavBar {
     display: flex;
-    align-items: flex-start; /* Alinea los elementos en la esquina superior izquierda */
-    width: 100%; /* Asegura que ocupe el 100% del ancho */
-    position: relative; /* Para que los elementos se posicionen relativamente dentro del navbar */
+    align-items: flex-start; 
+    width: 100%; 
+    position: relative; 
 
     h2 {
-        font-size: 24px; /* Tamaño ajustado para pantallas grandes */
+        font-size: 24px; 
         position: absolute;
         top: 20px;
         left: 20px;
@@ -257,7 +249,7 @@
         position: absolute;
         top: 50px;
         left: 20px;
-        font-size: 16px; /* Tamaño ajustado para pantallas grandes */
+        font-size: 16px; 
         font-family: "Urbanist", sans-serif;
         font-weight: 400;
         color: $Componentes;
@@ -291,7 +283,6 @@
     display: none;
 }
 
-/* Asegúrate de que el body y el html ocupen el 100% del ancho */
 html, body {
     width: 100%;
     margin: 0;

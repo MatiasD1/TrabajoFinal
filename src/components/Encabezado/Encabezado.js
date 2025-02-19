@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Encabezado = ({ imageSrc, seccion }) => {
+// Recibe las props y renderiza la imagen junto con el titulo de la página
+const Encabezado = ({ imageSrc, seccion }) => { 
     return (
         <div className='encabezado'>
             <img src={imageSrc} className="fotoEncabezado" alt="Encabezado" />
@@ -12,3 +13,4 @@ const Encabezado = ({ imageSrc, seccion }) => {
 }
 
 export default Encabezado;
+ 
